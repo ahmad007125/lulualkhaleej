@@ -24,8 +24,7 @@ export default function ServicesPage() {
             </h1>
 
             <p className="mt-2 text-lg text-gray-200 max-w-xl">
-              Serving Oil & Gas, Construction, Infrastructure and Logistics
-              sectors throughout Saudi Arabia.
+            A modern and well-maintained fleet equipped to support projects across Saudi Arabia with safety, reliability, and efficiency.
             </p>
           </div>
         </div>
