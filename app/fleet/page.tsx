@@ -1,23 +1,52 @@
 import FleetCard from "@/components/fleet-card";
-import { fleet } from "@/data/fleet";
+import { fleet } from "@/data/fleet"; 
+import Image from "next/image";
 
 export default function FleetPage() {
   return (
-    <section className="py-20">
-      <div className="container mx-auto px-6">
-        <h1 className="text-5xl font-bold">
-          Our Fleet
-        </h1>
+    <>
+      {/* Hero Section */}
+      <section className="relative min-h-[300px] flex items-center">
+        <Image
+          src="/images/hero-img.png"
+          alt="Heavy Equipment"
+          fill
+          priority
+          className="object-cover"
+        />
 
-        <div className="grid gap-8 md:grid-cols-3 mt-14">
-          {fleet.map((vehicle) => (
-            <FleetCard
-              key={vehicle.slug}
-              {...vehicle}
-            />
-          ))}
+        <div className="absolute inset-0 bg-black/70" />
+
+        <div className="container mx-auto px-6 relative z-10 flex justify-center">
+          <div className="max-w-3xl text-white mx-auto text-center py-12">
+            <h1 className="text-3xl md:text-5xl font-bold leading-normal">
+              Fleet
+            </h1>
+
+            <p className="mt-2 text-lg text-gray-200 max-w-xl">
+              Serving Oil & Gas, Construction, Infrastructure and Logistics
+              sectors throughout Saudi Arabia.
+            </p>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+      
+      <section className="py-20">
+        <div className="container mx-auto px-6">
+          <h1 className="text-5xl font-bold">
+            Our Fleet
+          </h1>
+
+          <div className="grid gap-8 md:grid-cols-3 mt-14">
+            {fleet.map((vehicle) => (
+              <FleetCard
+                key={vehicle.slug}
+                {...vehicle}
+              />
+            ))}
+          </div>
+        </div>
+      </section>
+    </>
   );
 }

@@ -9,6 +9,7 @@ export default function ThemeToggle() {
 
   return (
     <Button
+      className="px-5 py-3 !h-auto cursor-pointer"
       variant="outline"
       size="icon"
       onClick={() =>

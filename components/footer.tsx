@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="border-t py-12 mt-20">
+    <footer className="border-t py-12">
       <div className="container mx-auto px-6">
         <div className="grid gap-8 md:grid-cols-3">
 
@@ -38,15 +38,19 @@ export default function Footer() {
 
             <p>Dallah Industrial Area</p>
             <p>Dammam, Saudi Arabia</p>
-            <p>info@lulualkhaleej.com</p>
-            <p>+966 XX XXX XXXX</p>
+            <a href="mailto:info@lulualkhaleej.com" className="mt-1 block">
+              info@lulualkhaleej.com
+            </a>
+            <a href="tel:+966505417597" className="mt-1 block">
+              +966 505417597
+            </a>
           </div>
         </div>
 
+      </div>
         <div className="border-t mt-8 pt-6 text-center text-sm text-muted-foreground">
           © 2026 Lulu Al-Khaleej for Rental Equipment.
         </div>
-      </div>
     </footer>
   );
 }

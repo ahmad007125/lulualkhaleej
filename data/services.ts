@@ -9,21 +9,21 @@ export const services = [
   {
     slug: "flatbed-transportation",
     title: "Flatbed Transportation",
-    image: "/images/services/flatbed.jpg",
+    image: "/images/services/flat-bed.jpg",
     description:
       "Safe transportation of equipment and materials."
   },
   {
     slug: "lowbed-transportation",
     title: "Lowbed Transportation",
-    image: "/images/services/lowbed.jpg",
+    image: "/images/services/low-bed.jpg",
     description:
       "Heavy machinery transportation across Saudi Arabia."
   },
   {
     slug: "forklift-rental",
     title: "Forklift Rental",
-    image: "/images/services/forklift.jpg",
+    image: "/images/services/fork-lift.jpg",
     description:
       "Material handling solutions for industrial operations."
   },
