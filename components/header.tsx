@@ -18,10 +18,10 @@ const links = [
     name: "Services",
     href: "/services",
   },
-  {
-    name: "Fleet",
-    href: "/fleet",
-  },
+  // {
+  //   name: "Fleet",
+  //   href: "/fleet",
+  // },
   {
     name: "Contact",
     href: "/contact",
@@ -57,8 +57,10 @@ export default function Header() {
           <div className="flex items-center gap-3">
             <ThemeToggle />
 
-            <Button className="px-5 py-3 !h-auto cursor-pointer">
-              Call Now
+            <Button className="px-5 py-3 !h-auto cursor-pointer" asChild>
+              <a href="tel:+966505417597">
+                Call Now
+              </a>
             </Button>
           </div>
         </div>
