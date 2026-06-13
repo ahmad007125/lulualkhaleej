@@ -1,78 +1,153 @@
-import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import { Eye, Heart, Target } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
+
+const values = [
+  {
+    title: "Mission",
+    description: "Deliver safe and reliable equipment solutions.",
+    icon: Target,
+  },
+  {
+    title: "Vision",
+    description: "Become Saudi Arabia's preferred rental partner.",
+    icon: Eye,
+  },
+  {
+    title: "Values",
+    description: "Safety, Reliability, Integrity.",
+    icon: Heart,
+  },
+];
 
 export default function AboutPage() {
   return (
     <>
-    {/* Hero Section */}
-    <section className="relative min-h-[300px] flex items-center">
-      <Image
-        src="/images/hero-img.png"
-        alt="Heavy Equipment"
-        fill
-        priority
-        className="object-cover"
-      />
+      <section className="relative min-h-[360px] flex items-center">
+        <Image
+          src="/images/hero-img.png"
+          alt="Heavy Equipment"
+          fill
+          priority
+          className="object-cover"
+        />
 
-      <div className="absolute inset-0 bg-black/70" />
+        <div className="absolute inset-0 bg-black/65" />
 
-      <div className="container mx-auto px-6 relative z-10 flex justify-center">
-        <div className="max-w-3xl text-white mx-auto text-center py-12">
-          <h1 className="text-3xl md:text-5xl font-bold leading-normal">
-            About Us
-          </h1>
+        <div className="container mx-auto px-6 relative z-10 flex justify-center">
+          <div className="max-w-3xl text-white mx-auto text-center py-12">
+            <h1 className="text-3xl md:text-5xl font-bold leading-normal">
+              About Us
+            </h1>
 
-          <p className="mt-2 text-lg text-gray-200 max-w-xl">
-            Serving Oil & Gas, Construction, Infrastructure and Logistics
-            sectors throughout Saudi Arabia.
+            <p className="mt-2 text-lg text-gray-200 max-w-xl mx-auto">
+              Serving Oil & Gas, Construction, Infrastructure and Logistics
+              sectors throughout Saudi Arabia.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20">
+        <div className="container mx-auto px-6 max-w-5xl text-center">
+          <h2 className="text-3xl font-bold">Who We Are</h2>
+
+          <p className="mt-4 text-lg leading-normal text-muted-foreground max-w-xl mx-auto">
+            We are a leading heavy equipment rental company providing reliable
+            machinery and transport solutions across Saudi Arabia for
+            construction, industrial, and infrastructure projects.
           </p>
-        </div>
-      </div>
-    </section>
 
-    {/* Main section */}
-    <section className="py-20">
-      <div className="container mx-auto px-6 max-w-5xl text-center">
-        <h2 className="text-3xl font-bold">
-          Who We Are
-        </h2>
+          <div className="grid md:grid-cols-3 gap-6 mt-16">
+            {values.map((item) => {
+              const Icon = item.icon;
 
-        <p className="mt-4 text-lg leading-normal text-muted-foreground max-w-xl mx-auto">
-          We are a leading heavy equipment rental company providing reliable machinery and transport solutions across Saudi Arabia for construction, industrial, and infrastructure projects.
-        </p>
+              return (
+                <div
+                  key={item.title}
+                  className="rounded-xl bg-background p-8 border hover:-translate-y-2 hover:shadow-xl transition-all duration-300 text-left"
+                >
+                  <div className="w-14 h-14 rounded-lg bg-primary/10 flex items-center justify-center mb-5">
+                    <Icon className="h-7 w-7 text-primary" />
+                  </div>
 
-        <div className="grid md:grid-cols-3 gap-6 mt-16">
-          <div className="border rounded-xl p-6">
-            <h3 className="font-semibold">
-              Mission
-            </h3>
-            <p className="mt-3 text-muted-foreground">
-              Deliver safe and reliable equipment
-              solutions.
-            </p>
-          </div>
+                  <h3 className="font-semibold text-xl mb-3">{item.title}</h3>
 
-          <div className="border rounded-xl p-6">
-            <h3 className="font-semibold">
-              Vision
-            </h3>
-            <p className="mt-3 text-muted-foreground">
-              Become Saudi Arabia's preferred
-              rental partner.
-            </p>
-          </div>
-
-          <div className="border rounded-xl p-6">
-            <h3 className="font-semibold">
-              Values
-            </h3>
-            <p className="mt-3 text-muted-foreground">
-              Safety, Reliability, Integrity.
-            </p>
+                  <p className="text-muted-foreground leading-normal">
+                    {item.description}
+                  </p>
+                </div>
+              );
+            })}
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      <section className="py-20 bg-muted">
+        <div className="container mx-auto px-6 max-w-5xl">
+          <h2 className="text-3xl font-bold text-center">Message from CEO</h2>
+
+          {/* <div className="grid md:grid-cols-[280px_1fr] mt-14 items-start"> */}
+          <div className="grid mt-8 items-start">
+            <div className="mx-auto md:mx-0">
+              {/* <div className="relative w-full h-[300px] rounded-xl overflow-hidden border shadow-lg">
+                <Image
+                  src="/images/ceo-placeholder.svg"
+                  alt="CEO - Lulu Al-Khaleej"
+                  fill
+                  className="object-cover"
+                />
+              </div> */}
+              {/* <div className="mt-5 text-center md:text-left">
+                <h3 className="font-semibold text-lg">Arshad Ghumman</h3>
+                <p className="text-muted-foreground text-sm">
+                  Chief Executive Officer
+                </p>
+              </div> */}
+            </div>
+
+            <div className="rounded-xl bg-background border px-8 py-12 text-center">
+              <p className="text-muted-foreground leading-relaxed max-w-3xl mx-auto">
+                At Lulu Al-Khaleej, our commitment goes beyond providing
+                equipment<br></br> we partner with our clients to ensure their projects
+                succeed safely, on time, and within budget. Since our founding,
+                we have built our reputation on reliability, professional
+                service, and a deep understanding of the Saudi industrial
+                landscape.
+              </p>
+              <p className="mt-5 text-muted-foreground leading-relaxed max-w-3xl mx-auto">
+                Whether you need boom trucks, cranes, forklifts, or heavy
+                transportation, our team is ready to deliver solutions tailored
+                to your project needs. Thank you for trusting Lulu Al-Khaleej as
+                your equipment rental partner.
+              </p>
+              <p className="mt-6 font-semibold">Arshad Ghumman, CEO</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* CTA Section */}
+      <section className="py-24 bg-slate-900 text-white">
+        <div className="container mx-auto px-6 text-center">
+          <h2 className="text-4xl font-bold">
+            Ready For Your Next Project?
+          </h2>
+
+          <p className="mt-4 text-slate-300">
+            Contact Lulu Al-Khaleej today for reliable equipment rental and
+            transportation solutions.
+          </p>
+
+          <Button
+            size="lg"
+            className="mt-8 px-5 py-3 !h-auto cursor-pointer"
+            asChild
+          >
+            <Link href="/contact">Request Quote</Link>
+          </Button>
+        </div>
+      </section>
     </>
   );
 }

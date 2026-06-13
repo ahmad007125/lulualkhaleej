@@ -6,7 +6,7 @@ export default function FleetPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative min-h-[300px] flex items-center">
+      <section className="relative min-h-[360px] flex items-center">
         <Image
           src="/images/hero-img.png"
           alt="Heavy Equipment"
@@ -15,7 +15,7 @@ export default function FleetPage() {
           className="object-cover"
         />
 
-        <div className="absolute inset-0 bg-black/70" />
+        <div className="absolute inset-0 bg-black/65" />
 
         <div className="container mx-auto px-6 relative z-10 flex justify-center">
           <div className="max-w-3xl text-white mx-auto text-center py-12">

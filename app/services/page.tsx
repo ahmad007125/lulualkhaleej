@@ -1,12 +1,14 @@
 import ServiceCard from "@/components/service-card";
+import { Button } from "@/components/ui/button";
 import { services } from "@/data/services";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function ServicesPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative min-h-[300px] flex items-center">
+      <section className="relative min-h-[360px] flex items-center">
         <Image
           src="/images/hero-img.png"
           alt="Heavy Equipment"
@@ -15,7 +17,7 @@ export default function ServicesPage() {
           className="object-cover"
         />
 
-        <div className="absolute inset-0 bg-black/70" />
+        <div className="absolute inset-0 bg-black/65" />
 
         <div className="container mx-auto px-6 relative z-10 flex justify-center">
           <div className="max-w-3xl text-white mx-auto text-center py-12">
@@ -44,6 +46,27 @@ export default function ServicesPage() {
               />
             ))}
           </div>
+        </div>
+      </section>
+      {/* CTA Section */}
+      <section className="py-24 bg-slate-900 text-white">
+        <div className="container mx-auto px-6 text-center">
+          <h2 className="text-4xl font-bold">
+            Ready For Your Next Project?
+          </h2>
+
+          <p className="mt-4 text-slate-300">
+            Contact Lulu Al-Khaleej today for reliable equipment rental and
+            transportation solutions.
+          </p>
+
+          <Button
+            size="lg"
+            className="mt-8 px-5 py-3 !h-auto cursor-pointer"
+            asChild
+          >
+            <Link href="/contact">Request Quote</Link>
+          </Button>
         </div>
       </section>
     </>

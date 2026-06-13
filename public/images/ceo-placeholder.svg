@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="480" viewBox="0 0 400 480" fill="none">
+  <rect width="400" height="480" fill="#E8E8E8"/>
+  <circle cx="200" cy="170" r="80" fill="#C4C4C4"/>
+  <ellipse cx="200" cy="380" rx="130" ry="110" fill="#C4C4C4"/>
+  <text x="200" y="450" text-anchor="middle" fill="#888888" font-family="Arial, sans-serif" font-size="18">CEO Photo</text>
+</svg>
