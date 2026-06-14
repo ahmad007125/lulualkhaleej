@@ -111,12 +111,14 @@ export default function ContactPage() {
 
       <section className="pb-20">
         <div className="container mx-auto px-6">
-          <h2 className="text-3xl font-bold text-center mb-8">Our Location</h2>
-          <div className="rounded-xl overflow-hidden border aspect-[16/7] min-h-[320px]">
+          <h2 className="text-3xl font-bold text-center mb-3">Our Location</h2>
+          <p className="text-center text-muted-foreground mb-10">
+            Dallah, Dammam, Eastern Province, Saudi Arabia
+          </p>
+          <div className="overflow-hidden rounded-xl border aspect-[4/3] md:aspect-[16/7]">
             <iframe
               src={MAP_EMBED_URL}
-              width="100%"
-              height="100%"
+              className="h-full w-full"
               style={{ border: 0 }}
               allowFullScreen
               loading="lazy"
@@ -124,9 +126,6 @@ export default function ContactPage() {
               title="Lulu Al-Khaleej location - Dallah, Dammam, Saudi Arabia"
             />
           </div>
-          <p className="text-center text-muted-foreground mt-4">
-            Dallah, Dammam, Eastern Province, Saudi Arabia
-          </p>
         </div>
       </section>
     </>

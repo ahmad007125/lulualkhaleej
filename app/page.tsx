@@ -111,18 +111,21 @@ export default function HomePage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative min-h-[80vh] flex items-center">
+      <section className="relative flex items-end aspect-[16/6]">
         <Image
-          src="/images/banner-img.png"
+          src="/images/banner.png"
           alt="Heavy Equipment"
           fill
           priority
-          className="object-cover"
+          className="object-cover object-top"
         />
 
-        <div className="absolute inset-0 bg-slate-900/70" />
+        <div className="container mx-auto px-6 relative z-10 pb-18">
+          <h4 className="text-5xl text-end font-bold leading-normal text-white">Lulu Alkhaleej</h4>
+          <p className="text-3xl text-end text-white">YOUR PARTNER IN HEAVY LIFTING</p>
+        </div>
 
-        <div className="container mx-auto px-6 relative z-10">
+        {/* <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-3xl text-white mx-auto text-center py-12">
             <h1 className="text-3xl md:text-5xl font-bold leading-normal">
               Reliable Heavy Equipment Rental &
@@ -148,25 +151,25 @@ export default function HomePage() {
               </Button>
             </div>
           </div>
-        </div>
+        </div> */}
       </section>
 
       {/* Stats Section */}
-      <section className="py-20">
+      <section className="py-20 bg-secondary">
         <div className="container mx-auto px-6">
           <div className="grid gap-6 md:grid-cols-4">
             <div className="rounded-xl border p-8 text-center">
-              <h3 className="text-4xl font-bold">10+</h3>
+              <h3 className="text-4xl font-bold">5+</h3>
               <p>Years Experience</p>
             </div>
 
             <div className="rounded-xl border p-8 text-center">
-              <h3 className="text-4xl font-bold">100+</h3>
+              <h3 className="text-4xl font-bold">500+</h3>
               <p>Projects</p>
             </div>
 
             <div className="rounded-xl border p-8 text-center">
-              <h3 className="text-4xl font-bold">50+</h3>
+              <h3 className="text-4xl font-bold">100+</h3>
               <p>Equipment Units</p>
             </div>
 
@@ -179,11 +182,21 @@ export default function HomePage() {
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="py-20 bg-muted">
-        <div className="container mx-auto px-6">
+      <section className="py-20 relative overflow-hidden">
+        <Image
+          src="/images/bg-section.png"
+          alt="Heavy Equipment"
+          fill
+          priority
+          className="object-cover object-top"
+        />
+        <div className="absolute inset-0 bg-background/60" />
+
+        <div className="container mx-auto px-6 relative z-10">
           <h2 className="text-4xl font-bold text-center">
             Why Choose Us
           </h2>
+          <p className="mt-4 text-center text-muted-foreground max-w-2xl mx-auto">Your Reliable Partner for Heavy Lifting and Logistics Solutions</p>
 
           <div className="grid gap-6 md:grid-cols-3 mt-12">
             {features.map((item) => {
@@ -226,6 +239,7 @@ export default function HomePage() {
           <h2 className="text-4xl font-bold text-center text-white">
             Our Fleet
           </h2>
+          <p className="mt-4 text-center text-gray-200 max-w-2xl mx-auto">A Powerful Fleet Built to Handle Every Challenge.</p>
           <div className="grid gap-6 md:grid-cols-4 mt-12">
             {fleet.slice(0, 4).map((vehicle) => (
               <div

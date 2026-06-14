@@ -10,6 +10,9 @@ const links = [
     name: "Home",
     href: "/",
   },
+  // {
+  //   separator: "|", 
+  // },
   {
     name: "About",
     href: "/about",
@@ -48,7 +51,7 @@ export default function Header() {
                 key={link.name}
                 href={link.href}
                 className="text-sm font-medium hover:text-primary transition"
-              >
+                >
                 {link.name}
               </Link>
             ))}
@@ -88,7 +91,7 @@ export default function Header() {
             </div>
           </div>
 
-          <nav className="flex justify-between gap-8 w-full">
+          {/* <nav className="flex justify-between gap-8 w-full pt-3 border-t pb-1">
             {links.map((link) => (
               <Link
                 key={link.name}
@@ -97,6 +100,22 @@ export default function Header() {
               >
                 {link.name}
               </Link>
+            ))}
+          </nav> */}
+          <nav className="flex items-center justify-between w-full pt-3 border-t pb-1">
+            {links.map((link, index) => (
+              <div key={link.name} className="flex items-center">
+                <Link
+                  href={link.href}
+                  className="text-sm font-medium hover:text-primary transition"
+                >
+                  {link.name}
+                </Link>
+
+                {/* {index < links.length - 1 && (
+                  <span className="mx-3 w-[1px] h-[16px] bg-border"></span>
+                )} */}
+              </div>
             ))}
           </nav>
         </div>

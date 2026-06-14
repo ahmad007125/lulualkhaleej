@@ -33,10 +33,11 @@ export default function ServicesPage() {
       </section>
 
       <section className="py-20">
-        <div className="container mx-auto px-6">
-          <h1 className="text-5xl font-bold text-center">
-            Services
-          </h1>
+        <div className="container mx-auto px-6 text-center">
+          <h2 className="text-3xl font-bold">
+            Supporting Every Project Stage
+          </h2>
+          <p className="mt-4 text-lg leading-normal text-muted-foreground max-w-xl mx-auto">With a modern fleet and skilled operators, we provide reliable equipment and transport solutions that ensure productivity, safety, and efficiency from start to finish.</p>
 
           <div className="grid gap-8 md:grid-cols-3 mt-14">
             {services.map((service) => (
