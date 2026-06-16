@@ -54,10 +54,18 @@ export default function AboutPage() {
           <h2 className="text-3xl font-bold">Who We Are</h2>
 
           <p className="mt-4 text-lg leading-normal text-muted-foreground max-w-xl mx-auto">
-            We are a leading heavy equipment rental company providing reliable
-            machinery and transport solutions across Saudi Arabia for
-            construction, industrial, and infrastructure projects.
+            Trusted heavy equipment rental and transport services across Saudi Arabia for construction and industrial projects.
           </p>
+
+          <div className="overflow-hidden rounded-xl mt-10">
+            <Image
+              src="/images/team.jpg"
+              alt="Team Image"
+              fill
+              priority
+              className="object-cover object-top !relative"
+            />
+          </div>
 
           <div className="grid md:grid-cols-3 gap-6 mt-16">
             {values.map((item) => {

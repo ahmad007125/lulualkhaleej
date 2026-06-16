@@ -124,60 +124,87 @@ export default function HomePage() {
           <h4 className="text-5xl text-end font-bold leading-normal text-white">Lulu Alkhaleej</h4>
           <p className="text-3xl text-end text-white">YOUR PARTNER IN HEAVY LIFTING</p>
         </div>
-
-        {/* <div className="container mx-auto px-6 relative z-10">
-          <div className="max-w-3xl text-white mx-auto text-center py-12">
-            <h1 className="text-3xl md:text-5xl font-bold leading-normal">
-              Reliable Heavy Equipment Rental &
-              Transportation Solutions
-            </h1>
-
-            <p className="mt-6 text-lg text-gray-200 text-center max-w-xl mx-auto">
-              Serving Oil & Gas, Construction, Infrastructure and Logistics
-              sectors throughout Saudi Arabia.
-            </p>
-
-            <div className="mt-8 flex justify-center gap-4">
-              <Button size="lg" className="px-5 py-3 !h-auto cursor-pointer">
-                Explore Fleet
-              </Button>
-
-              <Button
-                variant="secondary"
-                size="lg"
-                className="px-5 py-3 !h-auto cursor-pointer"
-              >
-                Contact Us
-              </Button>
-            </div>
-          </div>
-        </div> */}
       </section>
 
       {/* Stats Section */}
-      <section className="py-20 bg-secondary">
+      <section className="bg-slate-900 text-white">
         <div className="container mx-auto px-6">
           <div className="grid gap-6 md:grid-cols-4">
-            <div className="rounded-xl border p-8 text-center">
+            <div className="border-r border-chart-4 p-8 text-center">
               <h3 className="text-4xl font-bold">5+</h3>
               <p>Years Experience</p>
             </div>
 
-            <div className="rounded-xl border p-8 text-center">
+            <div className="border-r border-chart-4 p-8 text-center">
               <h3 className="text-4xl font-bold">500+</h3>
               <p>Projects</p>
             </div>
 
-            <div className="rounded-xl border p-8 text-center">
+            <div className="border-r border-chart-4 p-8 text-center">
               <h3 className="text-4xl font-bold">100+</h3>
               <p>Equipment Units</p>
             </div>
 
-            <div className="rounded-xl border p-8 text-center">
+            <div className="p-8 text-center">
               <h3 className="text-4xl font-bold">24/7</h3>
               <p>Support</p>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* General Section */}
+      <section className="py-20 bg-muted">
+        <div className="container mx-auto px-6">
+
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="max-w-3xl text-white mx-auto">
+              <h1 className="text-2xl md:text-3xl font-bold leading-normal text-foreground">
+                Reliable Heavy Equipment Rental &
+                Transportation Solutions
+              </h1>
+
+              <p className="mt-6 text-lg text-muted-foreground max-w-xl mx-auto">
+                Serving the Oil & Gas, Construction, Infrastructure, and Logistics sectors across Saudi Arabia, we provide dependable heavy equipment rental solutions with a strong focus on boom trucks. Our fleet supports a wide range of lifting, transportation, installation, and maintenance operations, helping businesses complete projects safely and efficiently. With well-maintained equipment, experienced operators, and a commitment to reliability, we deliver the support needed to keep your operations running smoothly and on schedule.
+              </p>
+
+              <div className="mt-8 flex gap-4">
+                  
+                  <Link
+                    href="/services"
+                    className="text-sm font-medium hover:text-primary transition"
+                    >
+                    <Button size="lg" className="px-5 py-3 !h-auto cursor-pointer">
+                      Explore Services
+                    </Button>
+                  </Link>
+
+                  <Link
+                    href="/contact"
+                    className="text-sm font-medium hover:text-primary transition"
+                    >
+                    <Button
+                      variant="secondary"
+                      size="lg"
+                      className="px-5 py-3 !h-auto cursor-pointer"
+                    >
+                      Contact Us
+                    </Button>
+                  </Link>
+              </div>
+            </div>
+
+            <div className="space-y-6 rounded-xl overflow-hidden">
+              <Image
+                src="/images/boom-trucks.jpg"
+                alt="Boom Trucks in Heavy Equipment"
+                fill
+                priority
+                className="object-cover object-top !relative"
+              />
+            </div>
+          </div>
+
         </div>
       </section>
 
