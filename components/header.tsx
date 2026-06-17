@@ -75,7 +75,7 @@ export default function Header() {
                 src="/images/lulu-logo.webp"
                 alt="Crane"
                 width={80}
-                height={46}
+                height={39}
               />
             </Link>
 
