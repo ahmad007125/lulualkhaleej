@@ -10,24 +10,24 @@ const MAP_EMBED_URL =
 export default function ContactPage() {
   return (
     <>
-      <section className="relative min-h-[360px] flex items-center">
+      <section className="relative sm:min-h-[360px] min-h-[206px] flex items-center">
         <Image
-          src="/images/hero-img.png"
+          src="/images/contact-us.jpg"
           alt="Heavy Equipment"
           fill
           priority
           className="object-cover"
         />
 
-        <div className="absolute inset-0 bg-black/65" />
+        <div className="absolute inset-0 bg-black/50" />
 
         <div className="container mx-auto px-6 relative z-10 flex justify-center">
-          <div className="max-w-3xl text-white mx-auto text-center py-12">
-            <h1 className="text-3xl md:text-5xl font-bold leading-normal">
+          <div className="max-w-3xl text-white mx-auto text-center sm:py-12 py-8">
+            <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold leading-normal">
               Contact Us
             </h1>
 
-            <p className="mt-2 text-lg text-gray-200 max-w-xl mx-auto">
+            <p className="mt-2 text-md sm:text-lg text-gray-200 max-w-xl mx-auto leading-normal">
               Providing reliable heavy equipment rental solutions across Saudi
               Arabia. Contact us today for inquiries, quotations, or project
               support.

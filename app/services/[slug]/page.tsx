@@ -49,7 +49,7 @@ export default async function ServiceDetailPage({ params }: Props) {
           priority
           className="object-cover"
         />
-        <div className="absolute inset-0 bg-black/65" />
+        <div className="absolute inset-0 bg-black/50" />
 
         <div className="container mx-auto px-6 relative z-10 pb-12">
           <Button
