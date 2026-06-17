@@ -131,22 +131,22 @@ export default function HomePage() {
         <div className="container mx-auto px-6">
           <div className="grid gap-6 md:grid-cols-4">
             <div className="md:border-r border-b border-r-none border-chart-4 p-8 text-center">
-              <h3 className="text-4xl font-bold">5+</h3>
+              <h3 className="sm:text-4xl text-2xl font-bold">5+</h3>
               <p>Years Experience</p>
             </div>
 
             <div className="md:border-r border-b border-r-none border-chart-4 p-8 text-center">
-              <h3 className="text-4xl font-bold">500+</h3>
+              <h3 className="sm:text-4xl text-2xl font-bold">500+</h3>
               <p>Projects</p>
             </div>
 
             <div className="md:border-r border-b border-r-none border-chart-4 p-8 text-center">
-              <h3 className="text-4xl font-bold">100+</h3>
+              <h3 className="sm:text-4xl text-2xl font-bold">100+</h3>
               <p>Equipment Units</p>
             </div>
 
             <div className="p-8 text-center">
-              <h3 className="text-4xl font-bold">24/7</h3>
+              <h3 className="sm:text-4xl text-2xl font-bold">24/7</h3>
               <p>Support</p>
             </div>
           </div>
@@ -156,19 +156,19 @@ export default function HomePage() {
       {/* Services Section */}
       <section className="py-20 bg-muted">
         <div className="container mx-auto px-6">
-          <h2 className="text-4xl font-bold text-center">
+          <h2 className="sm:text-4xl text-2xl font-bold text-center">
             Our Services
           </h2>
-          <p className="mt-4 text-center text-muted-foreground max-w-2xl mx-auto">A Powerful Fleet Built to Handle Every Challenge.</p>
+          <p className="sm:mt-4 mt-2 text-center text-muted-foreground max-w-2xl mx-auto">A Powerful Fleet Built to Handle Every Challenge.</p>
 
           <div className="space-y-16">
-            <div className="grid md:grid-cols-2 gap-12 items-center mt-12">
+            <div className="flex flex-col-reverse md:grid md:grid-cols-2 md:gap-12 gap-8 items-center mt-12">
               <div className="max-w-3xl text-white mx-auto">
                 <h1 className="text-2xl md:text-3xl font-bold leading-normal text-foreground">
                   Reliable Boom Truck Rental &<br></br> Lifting Solutions
                 </h1>
 
-                <p className="mt-6 text-md text-muted-foreground max-w-xl mx-auto">
+                <p className="md:mt-6 mt-4 text-md text-muted-foreground max-w-xl mx-auto">
                   Serving the Oil & Gas, Construction, Infrastructure, Industrial, and Logistics sectors across Saudi Arabia, we specialize in dependable boom truck rental services for a wide range of lifting and transportation needs. Our modern fleet of boom trucks is designed to handle material lifting, equipment installation, maintenance work, loading and unloading operations, and site support activities with precision and efficiency. Backed by experienced operators, well-maintained equipment, and a strong commitment to safety, we provide reliable lifting solutions that help businesses complete projects on time, reduce downtime, and maintain smooth operations across every stage of the job.
                 </p>
 
@@ -185,7 +185,7 @@ export default function HomePage() {
 
                 </div>
               </div>
-              <div className="rounded-xl overflow-hidden">
+              <div className="rounded-xl overflow-hidden w-full">
                 <Image
                   src="/images/boomtruck-main.jpg"
                   alt="Boom Trucks in Heavy Equipment"
@@ -195,8 +195,8 @@ export default function HomePage() {
                 />
               </div>
             </div>
-            <div className="grid md:grid-cols-2 gap-12 items-center">
-              <div className="rounded-xl overflow-hidden">
+            <div className="grid md:grid-cols-2 md:gap-12 gap-8 items-center">
+              <div className="rounded-xl overflow-hidden w-full">
                 <Image
                   src="/images/lulu-lowbed.jpg"
                   alt="Boom Trucks in Heavy Equipment"
@@ -210,7 +210,7 @@ export default function HomePage() {
                   Reliable Boom Truck Rental &<br></br> Lifting Solutions
                 </h1>
 
-                <p className="mt-6 text-md text-muted-foreground max-w-xl mx-auto">
+                <p className="md:mt-6 mt-4 text-md text-muted-foreground max-w-xl mx-auto">
                   Serving the Oil & Gas, Construction, Infrastructure, Industrial, and Logistics sectors across Saudi Arabia, we specialize in dependable boom truck rental services for a wide range of lifting and transportation needs. Our modern fleet of boom trucks is designed to handle material lifting, equipment installation, maintenance work, loading and unloading operations, and site support activities with precision and efficiency. Backed by experienced operators, well-maintained equipment, and a strong commitment to safety, we provide reliable lifting solutions that help businesses complete projects on time, reduce downtime, and maintain smooth operations across every stage of the job.
                 </p>
 
@@ -228,13 +228,13 @@ export default function HomePage() {
                 </div>
               </div>
             </div>
-            <div className="grid md:grid-cols-2 gap-12 items-center mt-12">
+            <div className="flex flex-col-reverse md:grid md:grid-cols-2 md:gap-12 gap-8 items-center mt-12">
               <div className="max-w-3xl text-white mx-auto">
                 <h1 className="text-2xl md:text-3xl font-bold leading-normal text-foreground">
                   Reliable Boom Truck Rental &<br></br> Lifting Solutions
                 </h1>
 
-                <p className="mt-6 text-md text-muted-foreground max-w-xl mx-auto">
+                <p className="md:mt-6 mt-4 text-md text-muted-foreground max-w-xl mx-auto">
                   Serving the Oil & Gas, Construction, Infrastructure, Industrial, and Logistics sectors across Saudi Arabia, we specialize in dependable boom truck rental services for a wide range of lifting and transportation needs. Our modern fleet of boom trucks is designed to handle material lifting, equipment installation, maintenance work, loading and unloading operations, and site support activities with precision and efficiency. Backed by experienced operators, well-maintained equipment, and a strong commitment to safety, we provide reliable lifting solutions that help businesses complete projects on time, reduce downtime, and maintain smooth operations across every stage of the job.
                 </p>
 
@@ -251,7 +251,7 @@ export default function HomePage() {
 
                 </div>
               </div>
-              <div className="rounded-xl overflow-hidden">
+              <div className="rounded-xl overflow-hidden w-full">
                 <Image
                   src="/images/lulu-flat-bed.jpg"
                   alt="Boom Trucks in Heavy Equipment"
@@ -278,7 +278,7 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-background/60" />
 
         <div className="container mx-auto px-6 relative z-10">
-          <h2 className="text-4xl font-bold text-center">
+          <h2 className="sm:text-4xl text-2xl font-bold text-center">
             Why Choose Us
           </h2>
           <p className="mt-4 text-center max-w-2xl mx-auto text-muted-foreground">Your Reliable Partner for Heavy Lifting and Logistics Solutions</p>
@@ -321,7 +321,7 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-slate-900/70" />
 
         <div className="container mx-auto px-6 relative z-10">
-          <h2 className="text-4xl font-bold text-center text-white">
+          <h2 className="sm:text-4xl text-2xl font-bold text-center text-white">
             Our Fleet
           </h2>
           <p className="mt-4 text-center text-gray-200 max-w-2xl mx-auto">A Powerful Fleet Built to Handle Every Challenge.</p>
@@ -352,8 +352,8 @@ export default function HomePage() {
       {/* Our Clients */}
       <section className="py-20 bg-muted">
         <div className="container mx-auto px-6">
-          <h2 className="text-4xl font-bold text-center">Our Clients</h2>
-          <p className="mt-4 text-center text-muted-foreground max-w-2xl mx-auto">
+          <h2 className="sm:text-4xl text-2xl font-bold text-center">Our Clients</h2>
+          <p className="sm:mt-4 mt-2 text-center text-muted-foreground max-w-2xl mx-auto">
             Trusted by leading companies across oil & gas, construction, and
             industrial sectors in Saudi Arabia.
           </p>
@@ -374,7 +374,7 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-slate-900/70" />
 
         <div className="container mx-auto px-6 relative z-10">
-          <h2 className="text-4xl font-bold text-center text-white">
+          <h2 className="sm:text-4xl text-2xl font-bold text-center text-white">
             Industries We Serve
           </h2>
           <p className="mt-4 text-center text-gray-200 max-w-2xl mx-auto">
@@ -410,7 +410,7 @@ export default function HomePage() {
       {/* Why Clients Choose Us */}
       <section className="py-20 bg-secondary">
         <div className="container mx-auto px-6">
-          <h2 className="text-4xl font-bold text-center text-foreground">
+          <h2 className="sm:text-4xl text-2xl font-bold text-center text-foreground">
             Built on Trust & Excellence
           </h2>
           <p className="mt-4 text-center max-w-2xl mx-auto text-muted-foreground">
@@ -444,9 +444,9 @@ export default function HomePage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 bg-slate-900 text-white">
+      <section className="sm:py-24 py-16 bg-slate-900 text-white">
         <div className="container mx-auto px-6 text-center">
-          <h2 className="text-4xl font-bold">
+          <h2 className="sm:text-4xl text-2xl font-bold">
             Ready For Your Next Project?
           </h2>
 

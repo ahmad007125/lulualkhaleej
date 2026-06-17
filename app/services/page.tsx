@@ -34,10 +34,10 @@ export default function ServicesPage() {
 
       <section className="py-20">
         <div className="container mx-auto px-6 text-center">
-          <h2 className="text-3xl font-bold">
+          <h2 className="sm:text-3xl text-2xl font-bold">
             Supporting Every Project Stage
           </h2>
-          <p className="mt-4 text-lg leading-normal text-muted-foreground max-w-xl mx-auto">With a modern fleet and skilled operators, we provide reliable equipment and transport solutions that ensure productivity, safety, and efficiency from start to finish.</p>
+          <p className="mt-4 sm:text-lg text-md leading-normal text-muted-foreground max-w-xl mx-auto">With a modern fleet and skilled operators, we provide reliable equipment and transport solutions that ensure productivity, safety, and efficiency from start to finish.</p>
 
           <div className="grid gap-8 md:grid-cols-3 mt-14">
             {services.map((service) => (
@@ -50,9 +50,9 @@ export default function ServicesPage() {
         </div>
       </section>
       {/* CTA Section */}
-      <section className="py-24 bg-slate-900 text-white">
+      <section className="sm:py-24 py-16 bg-slate-900 text-white">
         <div className="container mx-auto px-6 text-center">
-          <h2 className="text-4xl font-bold">
+          <h2 className="sm:text-4xl text-2xl font-bold">
             Ready For Your Next Project?
           </h2>
 

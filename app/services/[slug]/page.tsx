@@ -55,7 +55,7 @@ export default async function ServiceDetailPage({ params }: Props) {
           <Button
             variant="secondary"
             size="sm"
-            className="mb-6 px-4 py-2 !h-auto"
+            className="sm:mb-6 mb-2 px-4 py-2 !h-auto"
             asChild
           >
             <Link href="/services">
@@ -64,10 +64,10 @@ export default async function ServiceDetailPage({ params }: Props) {
             </Link>
           </Button>
 
-          <h1 className="text-3xl md:text-5xl font-bold text-white">
+          <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold text-white">
             {service.title}
           </h1>
-          <p className="mt-4 text-lg text-gray-200 max-w-2xl">
+          <p className="sm:mt-4 mt-2 text-md sm:text-lg text-gray-200 max-w-2xl">
             {service.description}
           </p>
         </div>
@@ -77,8 +77,8 @@ export default async function ServiceDetailPage({ params }: Props) {
         <div className="container mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             <div>
-              <h2 className="text-3xl font-bold">Overview</h2>
-              <p className="mt-6 text-muted-foreground leading-relaxed">
+              <h2 className="sm:text-3xl text-2xl font-bold">Overview</h2>
+              <p className="sm:mt-6 mt-2 text-muted-foreground leading-relaxed">
                 {service.longDescription}
               </p>
 
@@ -123,7 +123,7 @@ export default async function ServiceDetailPage({ params }: Props) {
 
       <section className="py-20 bg-muted">
         <div className="container mx-auto px-6">
-          <h2 className="text-3xl font-bold text-center">Related Services</h2>
+          <h2 className="sm:text-3xl text-2xl font-bold text-center">Related Services</h2>
           <div className="grid gap-6 md:grid-cols-3 mt-12">
             {relatedServices.map((item) => (
               <Link
@@ -153,7 +153,7 @@ export default async function ServiceDetailPage({ params }: Props) {
 
       <section className="py-20 bg-slate-900">
         <div className="container mx-auto px-6 text-center">
-          <h2 className="text-3xl font-bold text-white">Need {service.title}?</h2>
+          <h2 className="sm:text-3xl text-2xl font-bold text-white">Need {service.title}?</h2>
           <p className="mt-4 text-muted-foreground max-w-xl mx-auto text-slate-300">
             Contact our team for availability, pricing, and project support
             across Saudi Arabia.

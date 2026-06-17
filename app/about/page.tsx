@@ -135,9 +135,9 @@ export default function AboutPage() {
         </div>
       </section>
       {/* CTA Section */}
-      <section className="py-24 bg-slate-900 text-white">
+      <section className="sm:py-24 py-16 bg-slate-900 text-white">
         <div className="container mx-auto px-6 text-center">
-          <h2 className="text-4xl font-bold">
+          <h2 className="sm:text-4xl text-2xl font-bold">
             Ready For Your Next Project?
           </h2>
 

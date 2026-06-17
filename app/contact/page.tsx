@@ -38,11 +38,11 @@ export default function ContactPage() {
 
       <section className="py-20">
         <div className="container mx-auto px-6">
-          <h2 className="text-4xl font-bold text-center">Get In Touch</h2>
+          <h2 className="sm:text-4xl text-2xl font-bold text-center">Get In Touch</h2>
 
           <div className="grid md:grid-cols-2 gap-12 mt-14">
             <div>
-              <h3 className="text-2xl font-semibold">Contact Information</h3>
+              <h3 className="sm:text-2xl text-xl font-semibold">Contact Information</h3>
 
               <div className="mt-8 space-y-6">
                 <div className="flex items-start gap-4">
@@ -111,7 +111,7 @@ export default function ContactPage() {
 
       <section className="pb-20">
         <div className="container mx-auto px-6">
-          <h2 className="text-3xl font-bold text-center mb-3">Our Location</h2>
+          <h2 className="sm:text-3xl text-2xl font-bold text-center mb-3">Our Location</h2>
           <p className="text-center text-muted-foreground mb-10">
             Dallah, Dammam, Eastern Province, Saudi Arabia
           </p>
