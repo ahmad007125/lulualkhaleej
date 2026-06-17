@@ -5,13 +5,6 @@
 .container {
   max-width: 1280px;
 }
-/* .page-transition {
-  opacity: 0;
-  transition: opacity 200ms ease;
-}
-.page-transition.loaded {
-  opacity: 1;
-} */
 body {
   font-family: var(--font-body);
 }
@@ -122,14 +115,11 @@ nav,
   --popover: oklch(0.205 0 0);
   --popover-foreground: oklch(0.985 0 0);
   --primary: oklch(64.32% 0.24304 30.459);
-  /* --primary: oklch(0.922 0 0); */
-  /* --primary-foreground: oklch(0.205 0 0); */
   --primary-foreground: oklch(0.985 0 0);
   --secondary: oklch(0.269 0 0);
   --secondary-foreground: oklch(0.985 0 0);
   --muted: oklch(0.269 0 0);
   --muted-foreground: oklch(75.721% 0.00009 271.152);
-  /* --accent: oklch(0.269 0 0); */
   --accent: oklch(34.594% 0.17884 266.278);
   --accent-foreground: oklch(0.985 0 0);
   --destructive: oklch(0.704 0.191 22.216);

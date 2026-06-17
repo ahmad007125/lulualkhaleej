@@ -42,6 +42,6 @@ export const clients = [
   {
     name: "Red Sea Arabia",
     initials: "CP",
-    image: "/images/clients/9.webp",
+    image: "/images/clients/9.jpg",
   },
 ];
