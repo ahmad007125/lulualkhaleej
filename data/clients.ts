@@ -32,7 +32,7 @@ export const clients = [
   {
     name: "KMT",
     initials: "AR",
-    image: "/images/clients/7.webp",
+    image: "/images/clients/7.jpg",
   },
   {
     name: "Zamil Industrial",
