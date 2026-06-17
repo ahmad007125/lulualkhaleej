@@ -101,7 +101,7 @@ export default function ContactPage() {
 
               <Textarea placeholder="Message" rows={6} />
 
-              <Button className="px-5 py-3 !h-auto cursor-pointer">
+              <Button className="px-5 py-3 !h-auto cursor-pointer !font-bold">
                 Send Message
               </Button>
             </form>

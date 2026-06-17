@@ -60,7 +60,7 @@ export default function Header() {
           <div className="flex items-center gap-3">
             <ThemeToggle />
 
-            <Button className="px-5 py-3 !h-auto cursor-pointer" asChild>
+            <Button className="px-5 py-3 !h-auto cursor-pointer !font-bold !font-bold" asChild>
               <a href="tel:+966505417597">
                 Call Now
               </a>
@@ -79,11 +79,10 @@ export default function Header() {
               />
             </Link>
 
-
             <div className="flex items-center gap-3">
               <ThemeToggle />
 
-              <Button className="px-5 py-3 !h-auto cursor-pointer" asChild>
+              <Button className="px-5 py-3 !h-auto cursor-pointer !font-bold !font-bold" asChild>
                 <a href="tel:+966505417597">
                   Call Now
                 </a>
@@ -91,17 +90,6 @@ export default function Header() {
             </div>
           </div>
 
-          {/* <nav className="flex justify-between gap-8 w-full pt-3 border-t pb-1">
-            {links.map((link) => (
-              <Link
-                key={link.name}
-                href={link.href}
-                className="text-sm font-medium hover:text-primary transition"
-              >
-                {link.name}
-              </Link>
-            ))}
-          </nav> */}
           <nav className="flex items-center justify-between w-full pt-3 border-t pb-1">
             {links.map((link, index) => (
               <div key={link.name} className="flex items-center">

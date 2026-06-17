@@ -9,7 +9,8 @@ export default function ThemeToggle() {
 
   return (
     <Button
-      className="px-5 py-3 !h-auto cursor-pointer"
+      aria-label="Theme Button"
+      className="px-5 py-3 !h-auto cursor-pointer !font-bold"
       variant="outline"
       size="icon"
       onClick={() =>

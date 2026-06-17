@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import ClientsSlider from "@/components/clients-slider";
-import { fleet } from "@/data/fleet";
+// import { fleet } from "@/data/fleet";
 
 import {
   ShieldCheck,
@@ -117,6 +117,7 @@ export default function HomePage() {
           alt="Heavy Equipment"
           fill
           priority
+          fetchPriority="high"
           className="object-cover object-top"
         />
 
@@ -178,7 +179,7 @@ export default function HomePage() {
                       href="/services"
                       className="text-sm font-medium hover:text-primary transition"
                       >
-                      <Button size="lg" className="px-5 py-3 !h-auto cursor-pointer">
+                      <Button size="lg" className="px-5 py-3 !h-auto cursor-pointer !font-bold">
                         Explore Services
                       </Button>
                     </Link>
@@ -220,7 +221,7 @@ export default function HomePage() {
                       href="/services"
                       className="text-sm font-medium hover:text-primary transition"
                       >
-                      <Button size="lg" className="px-5 py-3 !h-auto cursor-pointer">
+                      <Button size="lg" className="px-5 py-3 !h-auto cursor-pointer !font-bold">
                         Explore Services
                       </Button>
                     </Link>
@@ -244,7 +245,7 @@ export default function HomePage() {
                       href="/services"
                       className="text-sm font-medium hover:text-primary transition"
                       >
-                      <Button size="lg" className="px-5 py-3 !h-auto cursor-pointer">
+                      <Button size="lg" className="px-5 py-3 !h-auto cursor-pointer !font-bold">
                         Explore Services
                       </Button>
                     </Link>
@@ -457,7 +458,7 @@ export default function HomePage() {
 
           <Button
             size="lg"
-            className="mt-8 px-5 py-3 !h-auto cursor-pointer"
+            className="mt-8 px-5 py-3 !h-auto cursor-pointer !font-bold"
             asChild
           >
             <Link href="/contact">Request Quote</Link>
