@@ -2,37 +2,37 @@ export const fleet = [
   {
     slug: "boom-truck-25-ton",
     name: "Boom Truck 25 Ton",
-    image: "/images/services/boom-truck.jpg",
+    image: "/images/services/boom-truck.webp",
     capacity: "25 Ton"
   },
   {
     slug: "boom-truck-50-ton",
     name: "Boom Truck 50 Ton",
-    image: "/images/services/boom-truck.jpg",
+    image: "/images/services/boom-truck.webp",
     capacity: "50 Ton"
   },
   {
     slug: "flatbed-truck",
     name: "Flatbed Truck",
-    image: "/images/services/flat-bed.jpg",
+    image: "/images/services/flat-bed.webp",
     capacity: "40 Ton"
   },
   {
     slug: "lowbed-trailer",
     name: "Lowbed Trailer",
-    image: "/images/services/low-bed.jpg",
+    image: "/images/services/low-bed.webp",
     capacity: "80 Ton"
   },
   {
     slug: "forklift-7-ton",
     name: "Forklift 7 Ton",
-    image: "/images/services/fork-lift.jpg",
+    image: "/images/services/fork-lift.webp",
     capacity: "7 Ton"
   },
   {
     slug: "hydraulic-crane",
     name: "Hydraulic Crane",
-    image: "/images/services/crane.jpg",
+    image: "/images/services/crane.webp",
     capacity: "120 Ton"
   }
 ];

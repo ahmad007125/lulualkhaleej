@@ -113,7 +113,7 @@ export default function HomePage() {
       {/* Hero Section */}
       <section className="relative flex items-end md:aspect-[16/6] sm:aspect-[16/8] aspect-[16/9]">
         <Image
-          src="/images/banner.png"
+          src="/images/banner.webp"
           alt="Heavy Equipment"
           fill
           priority
@@ -177,9 +177,9 @@ export default function HomePage() {
                     
                     <Link
                       href="/services"
-                      className="text-sm font-medium hover:text-primary transition"
+                      className="text-md hover:text-primary transition"
                       >
-                      <Button size="lg" className="px-5 py-3 !h-auto cursor-pointer !font-bold">
+                      <Button size="lg" className="px-5 py-3 !h-auto cursor-pointer !font-bold !text-md text-slate-900">
                         Explore Services
                       </Button>
                     </Link>
@@ -188,7 +188,7 @@ export default function HomePage() {
               </div>
               <div className="rounded-xl overflow-hidden w-full">
                 <Image
-                  src="/images/boomtruck-main.jpg"
+                  src="/images/boomtruck-main.webp"
                   alt="Boom Trucks in Heavy Equipment"
                   fill
                   priority
@@ -199,7 +199,7 @@ export default function HomePage() {
             <div className="grid md:grid-cols-2 md:gap-12 gap-8 items-center">
               <div className="rounded-xl overflow-hidden w-full">
                 <Image
-                  src="/images/lulu-lowbed.jpg"
+                  src="/images/lulu-lowbed.webp"
                   alt="Boom Trucks in Heavy Equipment"
                   fill
                   priority
@@ -219,9 +219,9 @@ export default function HomePage() {
                     
                     <Link
                       href="/services"
-                      className="text-sm font-medium hover:text-primary transition"
+                      className="text-md hover:text-primary transition"
                       >
-                      <Button size="lg" className="px-5 py-3 !h-auto cursor-pointer !font-bold">
+                      <Button size="lg" className="px-5 py-3 !h-auto cursor-pointer !font-bold !text-md text-slate-900">
                         Explore Services
                       </Button>
                     </Link>
@@ -243,9 +243,9 @@ export default function HomePage() {
                     
                     <Link
                       href="/services"
-                      className="text-sm font-medium hover:text-primary transition"
+                      className="text-md hover:text-primary transition"
                       >
-                      <Button size="lg" className="px-5 py-3 !h-auto cursor-pointer !font-bold">
+                      <Button size="lg" className="px-5 py-3 !h-auto cursor-pointer !font-bold !text-md text-slate-900">
                         Explore Services
                       </Button>
                     </Link>
@@ -254,7 +254,7 @@ export default function HomePage() {
               </div>
               <div className="rounded-xl overflow-hidden w-full">
                 <Image
-                  src="/images/lulu-flat-bed.jpg"
+                  src="/images/lulu-flat-bed.webp"
                   alt="Boom Trucks in Heavy Equipment"
                   fill
                   priority
@@ -270,7 +270,7 @@ export default function HomePage() {
       {/* Why Choose Us Section */}
       <section className="py-20 relative overflow-hidden">
         <Image
-          src="/images/bg-section.png"
+          src="/images/bg-section.webp"
           alt="Heavy Equipment"
           fill
           priority
@@ -314,7 +314,7 @@ export default function HomePage() {
       {/* Fleet Preview */}
       {/* <section className="relative py-20 overflow-hidden">
         <Image
-          src="/images/flatbed-bg.jpg"
+          src="/images/flatbed-bg.webp"
           alt=""
           fill
           className="object-cover"
@@ -367,7 +367,7 @@ export default function HomePage() {
       {/* Industries We Serve */}
       <section className="relative py-20 overflow-hidden">
         <Image
-          src="/images/boom-bg.jpg"
+          src="/images/boom-bg.webp"
           alt=""
           fill
           className="object-cover"
@@ -458,7 +458,7 @@ export default function HomePage() {
 
           <Button
             size="lg"
-            className="mt-8 px-5 py-3 !h-auto cursor-pointer !font-bold"
+            className="mt-8 px-5 py-3 !h-auto cursor-pointer !font-bold !text-md text-slate-900"
             asChild
           >
             <Link href="/contact">Request Quote</Link>

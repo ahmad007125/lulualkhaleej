@@ -32,7 +32,7 @@ export const clients = [
   {
     name: "KMT",
     initials: "AR",
-    image: "/images/clients/7.png",
+    image: "/images/clients/7.webp",
   },
   {
     name: "Zamil Industrial",
@@ -42,6 +42,6 @@ export const clients = [
   {
     name: "Red Sea Arabia",
     initials: "CP",
-    image: "/images/clients/9.png",
+    image: "/images/clients/9.webp",
   },
 ];

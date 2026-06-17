@@ -8,7 +8,7 @@ export default function FleetPage() {
       {/* Hero Section */}
       <section className="relative sm:min-h-[360px] min-h-[206px] flex items-center">
         <Image
-          src="/images/hero-img.png"
+          src="/images/hero-img.webp"
           alt="Heavy Equipment"
           fill
           priority

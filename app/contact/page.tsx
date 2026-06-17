@@ -12,7 +12,7 @@ export default function ContactPage() {
     <>
       <section className="relative sm:min-h-[360px] min-h-[206px] flex items-center">
         <Image
-          src="/images/contact-us.jpg"
+          src="/images/contact-us.webp"
           alt="Heavy Equipment"
           fill
           priority
@@ -101,7 +101,7 @@ export default function ContactPage() {
 
               <Textarea placeholder="Message" rows={6} />
 
-              <Button className="px-5 py-3 !h-auto cursor-pointer !font-bold">
+              <Button className="px-5 py-3 !h-auto cursor-pointer !font-bold !text-md text-slate-900">
                 Send Message
               </Button>
             </form>

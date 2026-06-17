@@ -38,7 +38,7 @@ export default function Header() {
         <div className="hidden sm:flex h-20 items-center justify-between">
           <Link href="/">
             <Image
-              src="/images/lulu-logo.png"
+              src="/images/lulu-logo.webp"
               alt="Crane"
               width={80}
               height={46}
@@ -50,7 +50,7 @@ export default function Header() {
               <Link
                 key={link.name}
                 href={link.href}
-                className="text-sm font-medium hover:text-primary transition"
+                className="text-md hover:text-primary transition"
                 >
                 {link.name}
               </Link>
@@ -60,7 +60,7 @@ export default function Header() {
           <div className="flex items-center gap-3">
             <ThemeToggle />
 
-            <Button className="px-5 py-3 !h-auto cursor-pointer !font-bold !font-bold" asChild>
+            <Button className="px-5 py-3 !h-auto cursor-pointer !font-bold !text-md text-slate-900 !font-bold" asChild>
               <a href="tel:+966505417597">
                 Call Now
               </a>
@@ -72,7 +72,7 @@ export default function Header() {
           <div className="flex items-center justify-between gap-3 w-full">
             <Link href="/">
               <Image
-                src="/images/lulu-logo.png"
+                src="/images/lulu-logo.webp"
                 alt="Crane"
                 width={80}
                 height={46}
@@ -82,7 +82,7 @@ export default function Header() {
             <div className="flex items-center gap-3">
               <ThemeToggle />
 
-              <Button className="px-5 py-3 !h-auto cursor-pointer !font-bold !font-bold" asChild>
+              <Button className="px-5 py-3 !h-auto cursor-pointer !font-bold !text-md text-slate-900 !font-bold" asChild>
                 <a href="tel:+966505417597">
                   Call Now
                 </a>
@@ -95,7 +95,7 @@ export default function Header() {
               <div key={link.name} className="flex items-center">
                 <Link
                   href={link.href}
-                  className="text-sm font-medium hover:text-primary transition"
+                  className="text-md hover:text-primary transition"
                 >
                   {link.name}
                 </Link>

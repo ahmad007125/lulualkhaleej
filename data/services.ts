@@ -12,7 +12,7 @@ export const services: Service[] = [
   {
     slug: "boom-truck-rental",
     title: "Boom Truck Rental",
-    image: "/images/services/boom-truck.jpg",
+    image: "/images/services/boom-truck.webp",
     description:
       "Reliable boom trucks for lifting and transportation projects.",
     longDescription:
@@ -33,7 +33,7 @@ export const services: Service[] = [
   {
     slug: "flatbed-transportation",
     title: "Flatbed Transportation",
-    image: "/images/services/flat-bed.jpg",
+    image: "/images/services/flat-bed.webp",
     description: "Safe transportation of equipment and materials.",
     longDescription:
       "We offer dependable flatbed transportation for oversized loads, construction materials, and industrial equipment across Saudi Arabia. Our fleet is equipped for secure loading, route planning, and timely delivery to project sites.",
@@ -53,7 +53,7 @@ export const services: Service[] = [
   {
     slug: "lowbed-transportation",
     title: "Lowbed Transportation",
-    image: "/images/services/low-bed.jpg",
+    image: "/images/services/low-bed.webp",
     description: "Heavy machinery transportation across Saudi Arabia.",
     longDescription:
       "Our lowbed trailers are designed for transporting heavy and oversized machinery including excavators, cranes, and industrial equipment. We handle permits, route surveys, and escort coordination when required.",
@@ -73,7 +73,7 @@ export const services: Service[] = [
   {
     slug: "forklift-rental",
     title: "Forklift Rental",
-    image: "/images/services/fork-lift.jpg",
+    image: "/images/services/fork-lift.webp",
     description: "Material handling solutions for industrial operations.",
     longDescription:
       "Rent forklifts for warehouses, construction yards, and industrial sites. We provide well-maintained units with flexible rental terms to match your operational requirements and project timelines.",
@@ -93,7 +93,7 @@ export const services: Service[] = [
   {
     slug: "crane-rental",
     title: "Crane Rental",
-    image: "/images/services/crane.jpg",
+    image: "/images/services/crane.webp",
     description: "Heavy lifting services for construction projects.",
     longDescription:
       "From mobile cranes to heavy-lift solutions, our crane rental services support complex lifting operations in construction, oil & gas, and industrial sectors. All equipment is inspected and operated under strict safety protocols.",
@@ -113,7 +113,7 @@ export const services: Service[] = [
   {
     slug: "dump-truck-rental",
     title: "Dump Truck Rental",
-    image: "/images/services/dump-truck.jpg",
+    image: "/images/services/dump-truck.webp",
     description:
       "Efficient transport of sand, gravel and construction materials.",
     longDescription:

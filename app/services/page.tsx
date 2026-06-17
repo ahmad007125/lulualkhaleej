@@ -10,7 +10,7 @@ export default function ServicesPage() {
       {/* Hero Section */}
       <section className="relative sm:min-h-[360px] min-h-[206px] flex items-center">
         <Image
-          src="/images/hero-img.png"
+          src="/images/hero-img.webp"
           alt="Heavy Equipment"
           fill
           priority
@@ -63,7 +63,7 @@ export default function ServicesPage() {
 
           <Button
             size="lg"
-            className="mt-8 px-5 py-3 !h-auto cursor-pointer !font-bold"
+            className="mt-8 px-5 py-3 !h-auto cursor-pointer !font-bold !text-md text-slate-900"
             asChild
           >
             <Link href="/contact">Request Quote</Link>

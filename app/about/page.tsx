@@ -26,7 +26,7 @@ export default function AboutPage() {
     <>
       <section className="relative sm:min-h-[360px] min-h-[206px] flex items-center">
         <Image
-          src="/images/lulu-equipment.jpg"
+          src="/images/boom-trucks.webp"
           alt="Heavy Equipment"
           fill
           priority
@@ -58,7 +58,7 @@ export default function AboutPage() {
 
           <div className="overflow-hidden rounded-xl mt-10">
             <Image
-              src="/images/team.jpg"
+              src="/images/team.webp"
               alt="Team Image"
               fill
               priority
@@ -148,7 +148,7 @@ export default function AboutPage() {
 
           <Button
             size="lg"
-            className="mt-8 px-5 py-3 !h-auto cursor-pointer !font-bold"
+            className="mt-8 px-5 py-3 !h-auto cursor-pointer !font-bold !text-md text-slate-900"
             asChild
           >
             <Link href="/contact">Request Quote</Link>
