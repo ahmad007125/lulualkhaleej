@@ -175,24 +175,24 @@ export default function HomePage() {
       {/* Stats Section */}
       <section className="bg-slate-900 text-white">
         <div className="container mx-auto sm:px-6 px-4">
-          <div className="grid gap-6 md:grid-cols-4">
-            <div className="md:border-r border-b border-r-none border-chart-4 p-8 text-center">
-              <h3 className="sm:text-4xl text-2xl font-bold">5+</h3>
+          <div className="grid md:gap-6 gap-0 md:grid-cols-4 grid-cols-2">
+            <div className="border-r md:border-b-0 border-b border-chart-4 md:p-8 px-4 py-6 text-center">
+              <h3 className="md:text-4xl sm:text-2xl text-xl font-bold">5+</h3>
               <p>Years Experience</p>
             </div>
 
-            <div className="md:border-r border-b border-r-none border-chart-4 p-8 text-center">
-              <h3 className="sm:text-4xl text-2xl font-bold">500+</h3>
+            <div className="md:border-r md:border-b-0 border-b border-chart-4 md:p-8 px-4 py-6 text-center">
+              <h3 className="md:text-4xl sm:text-2xl text-xl font-bold">500+</h3>
               <p>Projects</p>
             </div>
 
-            <div className="md:border-r border-b border-r-none border-chart-4 p-8 text-center">
-              <h3 className="sm:text-4xl text-2xl font-bold">100+</h3>
+            <div className="border-r border-chart-4 md:p-8 px-4 py-6 text-center">
+              <h3 className="md:text-4xl sm:text-2xl text-xl font-bold">100+</h3>
               <p>Equipment Units</p>
             </div>
 
-            <div className="p-8 text-center">
-              <h3 className="sm:text-4xl text-2xl font-bold">24/7</h3>
+            <div className="md:p-8 px-4 py-6 text-center">
+              <h3 className="md:text-4xl sm:text-2xl text-xl font-bold">24/7</h3>
               <p>Support</p>
             </div>
           </div>

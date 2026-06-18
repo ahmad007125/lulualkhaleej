@@ -68,7 +68,7 @@ export default function Header() {
           </div>
         </div>
 
-        <div className="sm:hidden flex flex-col gap-4 h-auto items-center justify-between pt-4 pb-2">
+        <div className="sm:hidden flex flex-col sm:gap-4 gap-3 h-auto items-center justify-between sm:pt-4 pt-3 pb-2">
           <div className="flex items-center justify-between gap-3 w-full">
             <Link href="/">
               <Image
