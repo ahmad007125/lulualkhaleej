@@ -17,6 +17,8 @@ const karla = Karla({
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import { ThemeProvider } from "@/components/theme-provider";
+import { MessageCircleMoreIcon } from "lucide-react";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Lulu Al-Khaleej",
@@ -35,6 +37,16 @@ export default function RootLayout({
         <ThemeProvider>
           <Header />
           <main>{children}</main>
+          {/* Whatsapp Icon */}
+          <Link
+            href="https://wa.me/966505417597"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Chat on WhatsApp"
+            className="fixed sm:bottom-6 bottom-4 sm:right-6 right-4 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-green-500 text-white shadow-lg transition-all duration-300 hover:scale-110"
+          >
+            <MessageCircleMoreIcon size={30} />
+          </Link>
           <Footer />
         </ThemeProvider>
       </body>
