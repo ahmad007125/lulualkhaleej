@@ -35,7 +35,7 @@ export default function AboutPage() {
 
         <div className="absolute inset-0 bg-black/50" />
 
-        <div className="container mx-auto px-6 relative z-10 flex justify-center">
+        <div className="container mx-auto sm:px-6 px-4 relative z-10 flex justify-center">
           <div className="max-w-3xl text-white mx-auto text-center sm:py-12 py-8">
             <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold leading-normal">
               About Us
@@ -49,7 +49,7 @@ export default function AboutPage() {
       </section>
 
       <section className="py-20">
-        <div className="container mx-auto px-6 max-w-5xl text-center">
+        <div className="container mx-auto sm:px-6 px-4 max-w-5xl text-center">
           <h2 className="text-3xl font-bold">Who We Are</h2>
 
           <p className="mt-4 text-lg leading-normal text-muted-foreground max-w-xl mx-auto">
@@ -92,7 +92,7 @@ export default function AboutPage() {
       </section>
 
       <section className="py-20 bg-muted">
-        <div className="container mx-auto px-6 max-w-5xl">
+        <div className="container mx-auto sm:px-6 px-4 max-w-5xl">
           <h2 className="text-3xl font-bold text-center">Message from CEO</h2>
 
           {/* <div className="grid md:grid-cols-[280px_1fr] mt-14 items-start"> */}
@@ -136,7 +136,7 @@ export default function AboutPage() {
       </section>
       {/* CTA Section */}
       <section className="sm:py-24 py-16 bg-slate-900 text-white">
-        <div className="container mx-auto px-6 text-center">
+        <div className="container mx-auto sm:px-6 px-4 text-center">
           <h2 className="sm:text-4xl text-2xl font-bold">
             Ready For Your Next Project?
           </h2>

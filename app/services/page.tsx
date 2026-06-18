@@ -19,7 +19,7 @@ export default function ServicesPage() {
 
         <div className="absolute inset-0 bg-black/50" />
 
-        <div className="container mx-auto px-6 relative z-10 flex justify-center">
+        <div className="container mx-auto sm:px-6 px-4 relative z-10 flex justify-center">
           <div className="max-w-3xl text-white mx-auto text-center sm:py-12 py-8">
             <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold leading-normal">
               Services
@@ -33,7 +33,7 @@ export default function ServicesPage() {
       </section>
 
       <section className="py-20">
-        <div className="container mx-auto px-6 text-center">
+        <div className="container mx-auto sm:px-6 px-4 text-center">
           <h2 className="sm:text-3xl text-2xl font-bold">
             Supporting Every Project Stage
           </h2>
@@ -51,7 +51,7 @@ export default function ServicesPage() {
       </section>
       {/* CTA Section */}
       <section className="sm:py-24 py-16 bg-slate-900 text-white">
-        <div className="container mx-auto px-6 text-center">
+        <div className="container mx-auto sm:px-6 px-4 text-center">
           <h2 className="sm:text-4xl text-2xl font-bold">
             Ready For Your Next Project?
           </h2>

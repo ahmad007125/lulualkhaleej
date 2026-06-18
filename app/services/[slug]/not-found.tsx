@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 export default function ServiceNotFound() {
   return (
     <section className="py-32 text-center">
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto sm:px-6 px-4">
         <h1 className="sm:text-4xl text-2xl font-bold">Service Not Found</h1>
         <p className="mt-4 text-muted-foreground">
           The service you are looking for does not exist.

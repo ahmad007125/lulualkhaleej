@@ -17,7 +17,7 @@ export default function FleetPage() {
 
         <div className="absolute inset-0 bg-black/50" />
 
-        <div className="container mx-auto px-6 relative z-10 flex justify-center">
+        <div className="container mx-auto sm:px-6 px-4 relative z-10 flex justify-center">
           <div className="max-w-3xl text-white mx-auto text-center sm:py-12 py-8">
             <h1 className="text-3xl md:text-5xl font-bold leading-normal">
               Fleet
@@ -32,7 +32,7 @@ export default function FleetPage() {
       </section>
       
       <section className="py-20">
-        <div className="container mx-auto px-6">
+        <div className="container mx-auto sm:px-6 px-4">
           <h1 className="text-5xl font-bold text-center">
             Our Fleet
           </h1>

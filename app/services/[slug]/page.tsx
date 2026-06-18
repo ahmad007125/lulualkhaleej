@@ -51,7 +51,7 @@ export default async function ServiceDetailPage({ params }: Props) {
         />
         <div className="absolute inset-0 bg-black/50" />
 
-        <div className="container mx-auto px-6 relative z-10 pb-12">
+        <div className="container mx-auto sm:px-6 px-4 relative z-10 pb-12">
           <Button
             variant="secondary"
             size="sm"
@@ -74,7 +74,7 @@ export default async function ServiceDetailPage({ params }: Props) {
       </section>
 
       <section className="py-20">
-        <div className="container mx-auto px-6">
+        <div className="container mx-auto sm:px-6 px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             <div>
               <h2 className="sm:text-3xl text-2xl font-bold">Overview</h2>
@@ -122,7 +122,7 @@ export default async function ServiceDetailPage({ params }: Props) {
       </section>
 
       <section className="py-20 bg-muted">
-        <div className="container mx-auto px-6">
+        <div className="container mx-auto sm:px-6 px-4">
           <h2 className="sm:text-3xl text-2xl font-bold text-center">Related Services</h2>
           <div className="grid gap-6 md:grid-cols-3 mt-12">
             {relatedServices.map((item) => (
@@ -152,7 +152,7 @@ export default async function ServiceDetailPage({ params }: Props) {
       </section>
 
       <section className="py-20 bg-slate-900">
-        <div className="container mx-auto px-6 text-center">
+        <div className="container mx-auto sm:px-6 px-4 text-center">
           <h2 className="sm:text-3xl text-2xl font-bold text-white">Need {service.title}?</h2>
           <p className="mt-4 text-muted-foreground max-w-xl mx-auto text-slate-300">
             Contact our team for availability, pricing, and project support

@@ -21,7 +21,7 @@ export default function ContactPage() {
 
         <div className="absolute inset-0 bg-black/50" />
 
-        <div className="container mx-auto px-6 relative z-10 flex justify-center">
+        <div className="container mx-auto sm:px-6 px-4 relative z-10 flex justify-center">
           <div className="max-w-3xl text-white mx-auto text-center sm:py-12 py-8">
             <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold leading-normal">
               Contact Us
@@ -37,7 +37,7 @@ export default function ContactPage() {
       </section>
 
       <section className="py-20">
-        <div className="container mx-auto px-6">
+        <div className="container mx-auto sm:px-6 px-4">
           <h2 className="sm:text-4xl text-2xl font-bold text-center">Get In Touch</h2>
 
           <div className="grid md:grid-cols-2 gap-12 mt-14">
@@ -110,7 +110,7 @@ export default function ContactPage() {
       </section>
 
       <section className="pb-20">
-        <div className="container mx-auto px-6">
+        <div className="container mx-auto sm:px-6 px-4">
           <h2 className="sm:text-3xl text-2xl font-bold text-center mb-3">Our Location</h2>
           <p className="text-center text-muted-foreground mb-10">
             Dallah, Dammam, Eastern Province, Saudi Arabia

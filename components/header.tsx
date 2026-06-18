@@ -34,7 +34,7 @@ const links = [
 export default function Header() {
   return (
     <header className="sticky top-0 z-50 border-b bg-background/80 backdrop-blur">
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto sm:px-6 px-4">
         <div className="hidden sm:flex h-20 items-center justify-between">
           <Link href="/">
             <Image
@@ -50,7 +50,7 @@ export default function Header() {
               <Link
                 key={link.name}
                 href={link.href}
-                className="text-md hover:text-primary transition"
+                className="sm:text-md text-sm hover:text-primary transition"
                 >
                 {link.name}
               </Link>
@@ -95,7 +95,7 @@ export default function Header() {
               <div key={link.name} className="flex items-center">
                 <Link
                   href={link.href}
-                  className="text-md hover:text-primary transition"
+                  className="sm:text-md text-sm hover:text-primary transition"
                 >
                   {link.name}
                 </Link>

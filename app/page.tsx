@@ -1,7 +1,10 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import ClientsSlider from "@/components/clients-slider";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination, EffectFade } from "swiper/modules";
 // import { fleet } from "@/data/fleet";
 
 import {
@@ -19,6 +22,15 @@ import {
   Handshake,
   Star,
 } from "lucide-react";
+
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/effect-fade";
+
+const slides = [
+  "/images/boom-banner.webp",
+  "/images/banner.webp",
+];
 
 export default function HomePage() {
   const features = [
@@ -111,7 +123,7 @@ export default function HomePage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative flex items-end md:aspect-[16/6] sm:aspect-[16/8] aspect-[16/9]">
+      {/* <section className="relative flex items-end md:aspect-[16/6] sm:aspect-[16/8] aspect-[16/9]">
         <Image
           src="/images/banner.webp"
           alt="Heavy Equipment"
@@ -121,15 +133,48 @@ export default function HomePage() {
           className="object-cover object-top"
         />
 
-        {/* <div className="container mx-auto px-6 relative z-10 md:pb-18 sm:pb-10 pb-6">
+        <div className="container mx-auto sm:px-6 px-4 relative z-10 md:pb-18 sm:pb-10 pb-6">
           <h4 className="md:text-4xl sm:text-2xl text-xl text-end font-bold leading-normal text-white">Lulu Alkhaleej</h4>
           <p className="md:text-2xl sm:text-xl text-lg text-end text-white">YOUR PARTNER IN HEAVY LIFTING</p>
-        </div> */}
+        </div>
+      </section> */}
+
+      <section className="relative flex items-end md:aspect-[16/6] sm:aspect-[16/8] aspect-[16/9] overflow-hidden">
+        <Swiper
+          modules={[Autoplay, EffectFade]}
+          slidesPerView={1}
+          loop={true}
+          effect="slide"
+          speed={500}
+          grabCursor={true}
+          autoplay={{
+            delay: 4000,
+            disableOnInteraction: false,
+          }}
+          pagination={{
+            clickable: true,
+          }}
+          className="w-full h-full"
+        >
+          {slides.map((slide, index) => (
+            <SwiperSlide key={index}>
+              <div className="relative w-full h-full md:aspect-[16/6] sm:aspect-[16/8] aspect-[16/9]">
+                <Image
+                  src={slide}
+                  alt={`Banner ${index + 1}`}
+                  fill
+                  priority={index === 0}
+                  className="object-cover object-center"
+                />
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </section>
 
       {/* Stats Section */}
       <section className="bg-slate-900 text-white">
-        <div className="container mx-auto px-6">
+        <div className="container mx-auto sm:px-6 px-4">
           <div className="grid gap-6 md:grid-cols-4">
             <div className="md:border-r border-b border-r-none border-chart-4 p-8 text-center">
               <h3 className="sm:text-4xl text-2xl font-bold">5+</h3>
@@ -156,7 +201,7 @@ export default function HomePage() {
 
       {/* Services Section */}
       <section className="py-20 bg-muted">
-        <div className="container mx-auto px-6">
+        <div className="container mx-auto sm:px-6 px-4">
           <h2 className="sm:text-4xl text-2xl font-bold text-center">
             Our Services
           </h2>
@@ -166,14 +211,14 @@ export default function HomePage() {
             <div className="flex flex-col-reverse md:grid md:grid-cols-2 md:gap-12 gap-8 items-center mt-12">
               <div className="max-w-3xl text-white mx-auto">
                 <h1 className="text-2xl md:text-3xl font-bold leading-normal text-foreground">
-                  Reliable Boom Truck Rental &<br></br> Lifting Solutions
+                  Reliable Boom Trucks
                 </h1>
 
                 <p className="md:mt-6 mt-4 text-md text-muted-foreground max-w-xl mx-auto">
-                  Serving the Oil & Gas, Construction, Infrastructure, Industrial, and Logistics sectors across Saudi Arabia, we specialize in dependable boom truck rental services for a wide range of lifting and transportation needs. Our modern fleet of boom trucks is designed to handle material lifting, equipment installation, maintenance work, loading and unloading operations, and site support activities with precision and efficiency. Backed by experienced operators, well-maintained equipment, and a strong commitment to safety, we provide reliable lifting solutions that help businesses complete projects on time, reduce downtime, and maintain smooth operations across every stage of the job.
+                  Serving the Oil & Gas, Construction, Infrastructure, Industrial, and Logistics sectors across Saudi Arabia, we provide reliable boom truck rental services for lifting, transportation, equipment installation, loading and unloading, and site support operations. With a modern fleet, skilled operators, and a strong focus on safety, we deliver efficient solutions that keep your projects running smoothly and on schedule.
                 </p>
 
-                <div className="mt-8 flex gap-4">
+                <div className="mt-6 flex gap-4">
                     
                     <Link
                       href="/services"
@@ -208,11 +253,11 @@ export default function HomePage() {
               </div>
               <div className="max-w-3xl text-white mx-auto">
                 <h1 className="text-2xl md:text-3xl font-bold leading-normal text-foreground">
-                  Reliable Boom Truck Rental &<br></br> Lifting Solutions
+                  Reliable Lowbed Trailers
                 </h1>
 
                 <p className="md:mt-6 mt-4 text-md text-muted-foreground max-w-xl mx-auto">
-                  Serving the Oil & Gas, Construction, Infrastructure, Industrial, and Logistics sectors across Saudi Arabia, we specialize in dependable boom truck rental services for a wide range of lifting and transportation needs. Our modern fleet of boom trucks is designed to handle material lifting, equipment installation, maintenance work, loading and unloading operations, and site support activities with precision and efficiency. Backed by experienced operators, well-maintained equipment, and a strong commitment to safety, we provide reliable lifting solutions that help businesses complete projects on time, reduce downtime, and maintain smooth operations across every stage of the job.
+                  We provide reliable lowbed trailer rental services across Saudi Arabia for the transportation of heavy machinery, construction equipment, oversized cargo, and industrial loads. Our modern fleet, experienced operators, and focus on safety ensure efficient and dependable transport solutions for every project.
                 </p>
 
                 <div className="mt-8 flex gap-4">
@@ -232,11 +277,11 @@ export default function HomePage() {
             <div className="flex flex-col-reverse md:grid md:grid-cols-2 md:gap-12 gap-8 items-center mt-12">
               <div className="max-w-3xl text-white mx-auto">
                 <h1 className="text-2xl md:text-3xl font-bold leading-normal text-foreground">
-                  Reliable Boom Truck Rental &<br></br> Lifting Solutions
+                  Reliable Flatbed Trailers
                 </h1>
 
                 <p className="md:mt-6 mt-4 text-md text-muted-foreground max-w-xl mx-auto">
-                  Serving the Oil & Gas, Construction, Infrastructure, Industrial, and Logistics sectors across Saudi Arabia, we specialize in dependable boom truck rental services for a wide range of lifting and transportation needs. Our modern fleet of boom trucks is designed to handle material lifting, equipment installation, maintenance work, loading and unloading operations, and site support activities with precision and efficiency. Backed by experienced operators, well-maintained equipment, and a strong commitment to safety, we provide reliable lifting solutions that help businesses complete projects on time, reduce downtime, and maintain smooth operations across every stage of the job.
+                  From construction materials and steel structures to industrial equipment and general cargo, our flatbed trailer rental services provide safe, efficient, and reliable transportation across Saudi Arabia. Backed by a modern fleet, experienced drivers, and a strong commitment to safety, we help businesses keep operations running smoothly and projects on schedule.
                 </p>
 
                 <div className="mt-8 flex gap-4">
@@ -278,7 +323,7 @@ export default function HomePage() {
         />
         <div className="absolute inset-0 bg-background/60" />
 
-        <div className="container mx-auto px-6 relative z-10">
+        <div className="container mx-auto sm:px-6 px-4 relative z-10">
           <h2 className="sm:text-4xl text-2xl font-bold text-center">
             Why Choose Us
           </h2>
@@ -321,7 +366,7 @@ export default function HomePage() {
         />
         <div className="absolute inset-0 bg-slate-900/70" />
 
-        <div className="container mx-auto px-6 relative z-10">
+        <div className="container mx-auto sm:px-6 px-4 relative z-10">
           <h2 className="sm:text-4xl text-2xl font-bold text-center text-white">
             Our Fleet
           </h2>
@@ -352,7 +397,7 @@ export default function HomePage() {
 
       {/* Our Clients */}
       <section className="py-20 bg-muted">
-        <div className="container mx-auto px-6">
+        <div className="container mx-auto sm:px-6 px-4">
           <h2 className="sm:text-4xl text-2xl font-bold text-center">Our Clients</h2>
           <p className="sm:mt-4 mt-2 text-center text-muted-foreground max-w-2xl mx-auto">
             Trusted by leading companies across oil & gas, construction, and
@@ -374,7 +419,7 @@ export default function HomePage() {
         />
         <div className="absolute inset-0 bg-slate-900/70" />
 
-        <div className="container mx-auto px-6 relative z-10">
+        <div className="container mx-auto sm:px-6 px-4 relative z-10">
           <h2 className="sm:text-4xl text-2xl font-bold text-center text-white">
             Industries We Serve
           </h2>
@@ -410,7 +455,7 @@ export default function HomePage() {
 
       {/* Why Clients Choose Us */}
       <section className="py-20 bg-secondary">
-        <div className="container mx-auto px-6">
+        <div className="container mx-auto sm:px-6 px-4">
           <h2 className="sm:text-4xl text-2xl font-bold text-center text-foreground">
             Built on Trust & Excellence
           </h2>
@@ -446,7 +491,7 @@ export default function HomePage() {
 
       {/* CTA Section */}
       <section className="sm:py-24 py-16 bg-slate-900 text-white">
-        <div className="container mx-auto px-6 text-center">
+        <div className="container mx-auto sm:px-6 px-4 text-center">
           <h2 className="sm:text-4xl text-2xl font-bold">
             Ready For Your Next Project?
           </h2>
