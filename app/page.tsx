@@ -224,7 +224,7 @@ export default function HomePage() {
                       href="/services"
                       className="text-md hover:text-primary transition"
                       >
-                      <Button size="lg" className="px-5 py-3 !h-auto cursor-pointer !font-bold !text-md text-slate-900">
+                      <Button size="lg" className="px-5 py-3 !h-auto cursor-pointer !font-bold !text-md text-white">
                         Explore Services
                       </Button>
                     </Link>
@@ -266,7 +266,7 @@ export default function HomePage() {
                       href="/services"
                       className="text-md hover:text-primary transition"
                       >
-                      <Button size="lg" className="px-5 py-3 !h-auto cursor-pointer !font-bold !text-md text-slate-900">
+                      <Button size="lg" className="px-5 py-3 !h-auto cursor-pointer !font-bold !text-md text-white">
                         Explore Services
                       </Button>
                     </Link>
@@ -290,7 +290,7 @@ export default function HomePage() {
                       href="/services"
                       className="text-md hover:text-primary transition"
                       >
-                      <Button size="lg" className="px-5 py-3 !h-auto cursor-pointer !font-bold !text-md text-slate-900">
+                      <Button size="lg" className="px-5 py-3 !h-auto cursor-pointer !font-bold !text-md text-white">
                         Explore Services
                       </Button>
                     </Link>
@@ -503,7 +503,7 @@ export default function HomePage() {
 
           <Button
             size="lg"
-            className="mt-8 px-5 py-3 !h-auto cursor-pointer !font-bold !text-md text-slate-900"
+            className="mt-8 px-5 py-3 !h-auto cursor-pointer !font-bold !text-md text-white"
             asChild
           >
             <Link href="/contact">Request Quote</Link>

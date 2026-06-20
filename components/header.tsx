@@ -60,7 +60,7 @@ export default function Header() {
           <div className="flex items-center gap-3">
             <ThemeToggle />
 
-            <Button className="px-5 py-3 !h-auto cursor-pointer !font-bold !text-md text-slate-900 !font-bold" asChild>
+            <Button className="px-5 py-3 !h-auto cursor-pointer !font-bold !text-md text-white !font-bold" asChild>
               <a href="tel:+966505417597">
                 Call Now
               </a>
@@ -82,7 +82,7 @@ export default function Header() {
             <div className="flex items-center gap-3">
               <ThemeToggle />
 
-              <Button className="px-5 py-3 !h-auto cursor-pointer !font-bold !text-md text-slate-900 !font-bold" asChild>
+              <Button className="px-5 py-3 !h-auto cursor-pointer !font-bold !text-md text-white !font-bold" asChild>
                 <a href="tel:+966505417597">
                   Call Now
                 </a>

@@ -37,7 +37,7 @@ export default function FleetCard({
 
         <Button
           asChild
-          className="mt-4 px-5 py-3 !h-auto cursor-pointer !font-bold !text-md text-slate-900"
+          className="mt-4 px-5 py-3 !h-auto cursor-pointer !font-bold !text-md text-white"
         >
           <Link href={`/fleet/${slug}`}>
             View Details

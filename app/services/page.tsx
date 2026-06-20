@@ -63,7 +63,7 @@ export default function ServicesPage() {
 
           <Button
             size="lg"
-            className="mt-8 px-5 py-3 !h-auto cursor-pointer !font-bold !text-md text-slate-900"
+            className="mt-8 px-5 py-3 !h-auto cursor-pointer !font-bold !text-md text-white"
             asChild
           >
             <Link href="/contact">Request Quote</Link>

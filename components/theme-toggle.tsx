@@ -10,7 +10,7 @@ export default function ThemeToggle() {
   return (
     <Button
       aria-label="Theme Button"
-      className="px-5 py-3 !h-auto cursor-pointer !font-bold !text-md text-slate-900"
+      className="px-5 py-3 !h-auto cursor-pointer !font-bold !text-md text-foreground"
       variant="outline"
       size="icon"
       onClick={() =>
@@ -18,7 +18,7 @@ export default function ThemeToggle() {
       }
     >
       {theme === "dark" ? (
-        <Sun className="h-4 w-4 text-foreground" />
+        <Sun className="h-4 w-4" />
       ) : (
         <Moon className="h-4 w-4" />
       )}
