@@ -1,12 +1,14 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
 
-// Next.js App Router API route — no separate backend server required.
+export const runtime = "nodejs";
+
 const CONTACT_EMAIL =
-  process.env.CONTACT_EMAIL ?? "creativeclub007125@.com";
+  process.env.CONTACT_EMAIL ?? "creativeclub007125@gmail.com";
 const FROM_EMAIL =
   process.env.RESEND_FROM_EMAIL ??
   "Lulu Al-Khaleej <onboarding@resend.dev>";
+
 function escapeHtml(value: string) {
   return value
     .replace(/&/g, "&amp;")
@@ -35,7 +37,7 @@ export async function POST(request: Request) {
       );
     }
 
-    const apiKey = process.env.RESEND_API_KEY;
+    const apiKey = process.env.RESEND_API_KEY?.trim();
     if (!apiKey) {
       console.error("RESEND_API_KEY is not configured");
       return NextResponse.json(
