@@ -70,67 +70,67 @@ export const services: Service[] = [
       "Power plant machinery",
     ],
   },
-  {
-    slug: "forklift-rental",
-    title: "Forklift Rental",
-    image: "/images/services/fork-lift.webp",
-    description: "Material handling solutions for industrial operations.",
-    longDescription:
-      "Rent forklifts for warehouses, construction yards, and industrial sites. We provide well-maintained units with flexible rental terms to match your operational requirements and project timelines.",
-    features: [
-      "Various tonnage capacities",
-      "Diesel and electric options",
-      "Short and long-term rental",
-      "On-site delivery available",
-    ],
-    applications: [
-      "Warehouse operations",
-      "Construction yards",
-      "Port and logistics",
-      "Manufacturing facilities",
-    ],
-  },
-  {
-    slug: "crane-rental",
-    title: "Crane Rental",
-    image: "/images/services/crane.webp",
-    description: "Heavy lifting services for construction projects.",
-    longDescription:
-      "From mobile cranes to heavy-lift solutions, our crane rental services support complex lifting operations in construction, oil & gas, and industrial sectors. All equipment is inspected and operated under strict safety protocols.",
-    features: [
-      "Mobile and truck-mounted cranes",
-      "Certified crane operators",
-      "Lift planning assistance",
-      "Safety compliance guaranteed",
-    ],
-    applications: [
-      "Building construction",
-      "Plant maintenance",
-      "Infrastructure projects",
-      "Oil & gas installations",
-    ],
-  },
-  {
-    slug: "dump-truck-rental",
-    title: "Dump Truck Rental",
-    image: "/images/services/dump-truck.webp",
-    description:
-      "Efficient transport of sand, gravel and construction materials.",
-    longDescription:
-      "Our dump truck fleet supports earthmoving, road construction, and material hauling projects throughout the Eastern Province and beyond. Reliable units with experienced drivers keep your project on schedule.",
-    features: [
-      "Multiple payload capacities",
-      "Experienced operators",
-      "Fleet availability",
-      "Flexible contract terms",
-    ],
-    applications: [
-      "Earthmoving projects",
-      "Road construction",
-      "Sand and aggregate hauling",
-      "Site clearance operations",
-    ],
-  },
+  // {
+  //   slug: "forklift-rental",
+  //   title: "Forklift Rental",
+  //   image: "/images/services/fork-lift.webp",
+  //   description: "Material handling solutions for industrial operations.",
+  //   longDescription:
+  //     "Rent forklifts for warehouses, construction yards, and industrial sites. We provide well-maintained units with flexible rental terms to match your operational requirements and project timelines.",
+  //   features: [
+  //     "Various tonnage capacities",
+  //     "Diesel and electric options",
+  //     "Short and long-term rental",
+  //     "On-site delivery available",
+  //   ],
+  //   applications: [
+  //     "Warehouse operations",
+  //     "Construction yards",
+  //     "Port and logistics",
+  //     "Manufacturing facilities",
+  //   ],
+  // },
+  // {
+  //   slug: "crane-rental",
+  //   title: "Crane Rental",
+  //   image: "/images/services/crane.webp",
+  //   description: "Heavy lifting services for construction projects.",
+  //   longDescription:
+  //     "From mobile cranes to heavy-lift solutions, our crane rental services support complex lifting operations in construction, oil & gas, and industrial sectors. All equipment is inspected and operated under strict safety protocols.",
+  //   features: [
+  //     "Mobile and truck-mounted cranes",
+  //     "Certified crane operators",
+  //     "Lift planning assistance",
+  //     "Safety compliance guaranteed",
+  //   ],
+  //   applications: [
+  //     "Building construction",
+  //     "Plant maintenance",
+  //     "Infrastructure projects",
+  //     "Oil & gas installations",
+  //   ],
+  // },
+  // {
+  //   slug: "dump-truck-rental",
+  //   title: "Dump Truck Rental",
+  //   image: "/images/services/dump-truck.webp",
+  //   description:
+  //     "Efficient transport of sand, gravel and construction materials.",
+  //   longDescription:
+  //     "Our dump truck fleet supports earthmoving, road construction, and material hauling projects throughout the Eastern Province and beyond. Reliable units with experienced drivers keep your project on schedule.",
+  //   features: [
+  //     "Multiple payload capacities",
+  //     "Experienced operators",
+  //     "Fleet availability",
+  //     "Flexible contract terms",
+  //   ],
+  //   applications: [
+  //     "Earthmoving projects",
+  //     "Road construction",
+  //     "Sand and aggregate hauling",
+  //     "Site clearance operations",
+  //   ],
+  // },
 ];
 
 export function getServiceBySlug(slug: string): Service | undefined {
