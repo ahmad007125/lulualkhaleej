@@ -1,12 +1,12 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
 
+// Next.js App Router API route — no separate backend server required.
 const CONTACT_EMAIL =
-  process.env.CONTACT_EMAIL ?? "creativeclub007125@gmail.com";
+  process.env.CONTACT_EMAIL ?? "creativeclub007125@.com";
 const FROM_EMAIL =
   process.env.RESEND_FROM_EMAIL ??
   "Lulu Al-Khaleej <onboarding@resend.dev>";
-
 function escapeHtml(value: string) {
   return value
     .replace(/&/g, "&amp;")
