@@ -89,7 +89,55 @@ const handleSubmit = async (
 
           <div className="grid md:grid-cols-2 gap-12 mt-14">
             <div>
-              {/* Your Contact Info */}
+              <h3 className="sm:text-2xl text-xl font-semibold">Contact Information</h3>
+
+              <div className="mt-8 space-y-6">
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
+                    <MapPin className="h-5 w-5 text-primary" />
+                  </div>
+                  <div>
+                    <p className="font-medium">Address</p>
+                    <p className="mt-1 text-muted-foreground">
+                      Dallah Industrial Area,
+                      <br />
+                      Dammam, Eastern Province,
+                      <br />
+                      Saudi Arabia
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
+                    <Mail className="h-5 w-5 text-primary" />
+                  </div>
+                  <div>
+                    <p className="font-medium">Email</p>
+                    <a
+                      href="mailto:info@lulualkhaleej.com"
+                      className="mt-1 block text-muted-foreground hover:text-primary transition"
+                    >
+                      info@lulualkhaleej.com
+                    </a>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
+                    <Phone className="h-5 w-5 text-primary" />
+                  </div>
+                  <div>
+                    <p className="font-medium">Phone</p>
+                    <a
+                      href="tel:+966505417597"
+                      className="mt-1 block text-muted-foreground hover:text-primary transition"
+                    >
+                      +966 505417597
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
 
             <form onSubmit={handleSubmit} className="space-y-4">
