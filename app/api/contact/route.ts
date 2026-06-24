@@ -53,19 +53,116 @@ export async function POST(request: Request) {
 
     const resend = new Resend(apiKey);
 
+    // const { data, error } = await resend.emails.send({
+    //   from: FROM_EMAIL,
+    //   to: CONTACT_EMAIL,
+    //   replyTo: email,
+    //   subject: `New Contact Form Submission - ${name}`,
+    //   html: `
+    //     <h2>New Contact Form Submission</h2>
+    //     <p><strong>Name:</strong> ${escapeHtml(name)}</p>
+    //     <p><strong>Email:</strong> ${escapeHtml(email)}</p>
+    //     <p><strong>Phone:</strong> ${escapeHtml(phone || "Not provided")}</p>
+    //     <p><strong>Company:</strong> ${escapeHtml(company || "Not provided")}</p>
+    //     <p><strong>Message:</strong></p>
+    //     <p>${escapeHtml(message).replace(/\n/g, "<br />")}</p>
+    //   `,
+    // });
+
     const { data, error } = await resend.emails.send({
       from: FROM_EMAIL,
       to: CONTACT_EMAIL,
       replyTo: email,
       subject: `New Contact Form Submission - ${name}`,
       html: `
-        <h2>New Contact Form Submission</h2>
-        <p><strong>Name:</strong> ${escapeHtml(name)}</p>
-        <p><strong>Email:</strong> ${escapeHtml(email)}</p>
-        <p><strong>Phone:</strong> ${escapeHtml(phone || "Not provided")}</p>
-        <p><strong>Company:</strong> ${escapeHtml(company || "Not provided")}</p>
-        <p><strong>Message:</strong></p>
-        <p>${escapeHtml(message).replace(/\n/g, "<br />")}</p>
+      <div style="margin:0;padding:40px 20px;background:#f4f7fb;font-family:Arial,sans-serif;">
+        
+        <div style="
+          max-width:600px;
+          margin:0 auto;
+          background:#ffffff;
+          border-radius:12px;
+          overflow:hidden;
+          box-shadow:0 4px 20px rgba(0,0,0,0.08);
+        ">
+          
+          <!-- Header -->
+          <div style="
+            background:linear-gradient(135deg,#2563eb,#1e40af);
+            padding:24px;
+            text-align:center;
+          ">
+            <h2 style="margin:0;color:#ffffff;font-size:24px;">
+              New Contact Form Submission
+            </h2>
+          </div>
+
+          <!-- Content -->
+          <div style="padding:30px;">
+            
+            <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;">
+              
+              <tr>
+                <td style="padding:12px 0;border-bottom:1px solid #e5e7eb;">
+                  <strong style="color:#111827;">Name</strong><br>
+                  <span style="color:#4b5563;">${escapeHtml(name)}</span>
+                </td>
+              </tr>
+
+              <tr>
+                <td style="padding:12px 0;border-bottom:1px solid #e5e7eb;">
+                  <strong style="color:#111827;">Email</strong><br>
+                  <span style="color:#4b5563;">${escapeHtml(email)}</span>
+                </td>
+              </tr>
+
+              <tr>
+                <td style="padding:12px 0;border-bottom:1px solid #e5e7eb;">
+                  <strong style="color:#111827;">Phone</strong><br>
+                  <span style="color:#4b5563;">${escapeHtml(phone || "Not provided")}</span>
+                </td>
+              </tr>
+
+              <tr>
+                <td style="padding:12px 0;border-bottom:1px solid #e5e7eb;">
+                  <strong style="color:#111827;">Company</strong><br>
+                  <span style="color:#4b5563;">${escapeHtml(company || "Not provided")}</span>
+                </td>
+              </tr>
+
+            </table>
+
+            <!-- Message -->
+            <div style="
+              margin-top:24px;
+              background:#f9fafb;
+              border-left:4px solid #2563eb;
+              padding:16px;
+              border-radius:8px;
+            ">
+              <strong style="display:block;margin-bottom:8px;color:#111827;">
+                Message
+              </strong>
+              <div style="color:#4b5563;line-height:1.6;">
+                ${escapeHtml(message).replace(/\n/g, "<br />")}
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Footer -->
+          <div style="
+            background:#f9fafb;
+            padding:16px;
+            text-align:center;
+            color:#6b7280;
+            font-size:12px;
+          ">
+            Contact form submission received from your website.
+          </div>
+
+        </div>
+      </div>
       `,
     });
 
