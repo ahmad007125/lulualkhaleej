@@ -5,10 +5,10 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Mail, MapPin, Phone } from "lucide-react";
-import Image from "next/image";
 
 const MAP_EMBED_URL =
-  "https://maps.google.com/maps?q=26.4613994,50.022094&z=18&output=embed";
+  // "https://maps.google.com/maps?q=26.4608907,50.0195289&z=17&output=embed";
+  "https://maps.google.com/maps?q=Lulu%20Al%20Khaleej%20Machinery%20Maintenance%20Co%20Dammam&z=18&output=embed";
 
 export default function ContactPage() {
   const [showWhatsapp, setShowWhatsapp] = useState(false);
