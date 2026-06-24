@@ -53,22 +53,6 @@ export async function POST(request: Request) {
 
     const resend = new Resend(apiKey);
 
-    // const { data, error } = await resend.emails.send({
-    //   from: FROM_EMAIL,
-    //   to: CONTACT_EMAIL,
-    //   replyTo: email,
-    //   subject: `New Contact Form Submission - ${name}`,
-    //   html: `
-    //     <h2>New Contact Form Submission</h2>
-    //     <p><strong>Name:</strong> ${escapeHtml(name)}</p>
-    //     <p><strong>Email:</strong> ${escapeHtml(email)}</p>
-    //     <p><strong>Phone:</strong> ${escapeHtml(phone || "Not provided")}</p>
-    //     <p><strong>Company:</strong> ${escapeHtml(company || "Not provided")}</p>
-    //     <p><strong>Message:</strong></p>
-    //     <p>${escapeHtml(message).replace(/\n/g, "<br />")}</p>
-    //   `,
-    // });
-
     const { data, error } = await resend.emails.send({
       from: FROM_EMAIL,
       to: CONTACT_EMAIL,
@@ -89,18 +73,18 @@ export async function POST(request: Request) {
           <!-- Header -->
           <div style="
             background:linear-gradient(135deg,#2563eb,#1e40af);
-            padding:24px;
+            padding:5%;
             text-align:center;
           ">
-            <h2 style="margin:0;color:#ffffff;font-size:24px;">
+            <h2 style="margin:0;color:#ffffff;font-size:24px; font-size:clamp(18px, 2vw, 24px);">
               New Contact Form Submission
             </h2>
           </div>
 
           <!-- Content -->
-          <div style="padding:30px;">
+          <div style="padding:5%;">
             
-            <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;">
+            <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse; font-size: 14px;">
               
               <tr>
                 <td style="padding:12px 0;border-bottom:1px solid #e5e7eb;">
@@ -139,6 +123,7 @@ export async function POST(request: Request) {
               border-left:4px solid #2563eb;
               padding:16px;
               border-radius:8px;
+              font-size: 14px;
             ">
               <strong style="display:block;margin-bottom:8px;color:#111827;">
                 Message
