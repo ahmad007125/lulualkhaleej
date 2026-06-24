@@ -8,7 +8,7 @@ import { Mail, MapPin, Phone } from "lucide-react";
 import Image from "next/image";
 
 const MAP_EMBED_URL =
-  "https://maps.google.com/maps?q=Dallah,+Dammam,+Eastern+Province,+Saudi+Arabia&z=14&output=embed";
+  "https://maps.google.com/maps?q=26.4613994,50.022094&z=18&output=embed";
 
 export default function ContactPage() {
   const [showWhatsapp, setShowWhatsapp] = useState(false);
@@ -211,6 +211,26 @@ const handleSubmit = async (
                 </a>
               )}
             </form>
+          </div>
+        </div>
+      </section>
+
+      <section className="pb-20">
+        <div className="container mx-auto sm:px-6 px-4">
+          <h2 className="sm:text-3xl text-2xl font-bold text-center mb-3">Our Location</h2>
+          <p className="text-center text-muted-foreground mb-10">
+            Dallah, Dammam, Eastern Province, Saudi Arabia
+          </p>
+          <div className="overflow-hidden rounded-xl border aspect-[4/3] md:aspect-[16/7]">
+            <iframe
+              src={MAP_EMBED_URL}
+              className="h-full w-full"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="strict-origin-when-cross-origin"
+              title="Lulu Al Khaleej Machinery Maintenance Co. - Dammam, Saudi Arabia"
+            />
           </div>
         </div>
       </section>
