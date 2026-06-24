@@ -5,7 +5,7 @@ import { Mail, MapPin, Phone } from "lucide-react";
 import Image from "next/image";
 
 const MAP_EMBED_URL =
-  "https://maps.google.com/maps?q=Dallah,+Dammam,+Eastern+Province,+Saudi+Arabia&z=14&output=embed";
+  "https://maps.google.com/maps?q=26.4613994,50.022094&z=18&output=embed";
 
 export default function ContactPage() {
   return (
@@ -122,8 +122,8 @@ export default function ContactPage() {
               style={{ border: 0 }}
               allowFullScreen
               loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              title="Lulu Al-Khaleej location - Dallah, Dammam, Saudi Arabia"
+              referrerPolicy="strict-origin-when-cross-origin"
+              title="Lulu Al Khaleej Machinery Maintenance Co. - Dammam, Saudi Arabia"
             />
           </div>
         </div>
